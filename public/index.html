@@ -293,13 +293,17 @@ body.cn-open { overflow: hidden !important; }
 </style>
 
 <style id="cn-home-section-blue">
-/* "Our accountants" section: theme red band -> site blue */
-.mcb-section-acda7d092,
+/* "Our accountants" section: theme red band -> site blue.
+   Blue sits behind the content; background layers stay transparent so the
+   photos (and all content) are never recoloured or covered. */
+.mcb-section-acda7d092 {
+  background-color: #0e57e8 !important;
+  background-image: none !important;
+}
 .mcb-section-acda7d092 > .mcb-background-overlay,
 .mcb-section-acda7d092 > .section_wrapper,
 .mcb-section-acda7d092 .mcb-section-inner {
-  background-color: #0e57e8 !important;
-  background-image: none !important;
+  background: transparent !important;
 }
 </style>
 </head>
