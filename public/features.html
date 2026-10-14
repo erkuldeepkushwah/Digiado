@@ -46,7 +46,11 @@ a:hover { color: #0b46b8; }
 .hero-features h1 { color: #fff; font-size: 48px; line-height: 1.15; max-width: 860px; margin: 0 auto 20px; }
 .hero-features p { color: #cbd5e1; font-size: 18px; max-width: 680px; margin: 0 auto 36px; line-height: 1.6; }
 
-
+/* Jump Navigation Pills */
+.feature-pills-bar { background: #fff; border-bottom: 1px solid #edf2f7; padding: 16px 24px; position: sticky; top: 69px; z-index: 900; }
+.feature-pills { display: flex; gap: 10px; max-width: 1240px; margin: 0 auto; overflow-x: auto; padding-bottom: 4px; }
+.pill-btn { white-space: nowrap; padding: 8px 16px; background: #f1f5f9; color: #475569; border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; transition: all .2s; }
+.pill-btn:hover { background: #0e57e8; color: #fff; }
 
 /* Feature Sections */
 .features-container { max-width: 1240px; margin: 0 auto; padding: 60px 24px; }
@@ -143,6 +147,7 @@ body.cn-open { overflow: hidden; }
 .cn-header .cn-btn:hover{background:#0e57e8;color:#fff;}
 .cn-header .cn-toggle{display:none;background:none;border:0;font-size:26px;line-height:1;cursor:pointer;
   color:#161922;padding:4px 6px;}
+.feature-pills-bar{top:90px;}
 @media (max-width:1024px){
   .cn-header .cn-nav{display:none;}
   .cn-header .cn-toggle{display:block;}
@@ -151,6 +156,7 @@ body.cn-open { overflow: hidden; }
   .cn-header .cn-inner{height:70px;padding:0 16px;}
   .cn-header .cn-logo img{width:150px;}
   .cn-header .cn-btn{padding:11px 16px;font-size:12px;}
+  .feature-pills-bar{top:70px;}
 }
 </style>
 </head>
@@ -191,6 +197,16 @@ body.cn-open { overflow: hidden; }
   </div>
 </header>
 
+<div class="feature-pills-bar">
+  <div class="feature-pills">
+    <a href="#plan-advertising" class="pill-btn">AI Ad Planner</a>
+    <a href="#research-ads" class="pill-btn">Research Ads</a>
+    <a href="#create-creatives" class="pill-btn">Create Creatives</a>
+    <a href="#launch-campaigns" class="pill-btn">Launch Campaigns</a>
+    <a href="#reach-engage" class="pill-btn">Reach &amp; Engage</a>
+    <a href="#analyze-improve" class="pill-btn">Analyze &amp; Improve</a>
+  </div>
+</div>
 
 <section class="hero-features">
   <div class="badge">Next-Gen Advertising Intelligence</div>
