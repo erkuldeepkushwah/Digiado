@@ -290,6 +290,46 @@ body.cn-open { overflow: hidden !important; }
 @keyframes cdFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 
+<style id="cn-header-style">
+.cn-header{background:#fff;border-bottom:1px solid #edf2f7;position:sticky;top:0;z-index:1000;
+  font-family:'DM Sans','Roboto',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;}
+.cn-header *,.cn-header *::before,.cn-header *::after{box-sizing:border-box;}
+.cn-header .cn-inner{max-width:1230px;margin:0 auto;padding:0 24px;height:90px;display:flex;
+  align-items:center;justify-content:space-between;gap:24px;}
+.cn-header .cn-logo{display:flex;align-items:center;flex:0 0 auto;text-decoration:none;}
+.cn-header .cn-logo img{width:188px;height:auto;display:block;}
+.cn-header .cn-nav{flex:1 1 auto;display:flex;justify-content:center;}
+.cn-header .cn-nav>ul{display:flex;align-items:center;gap:38px;list-style:none;margin:0;padding:0;}
+.cn-header .cn-nav li{position:relative;}
+.cn-header .cn-nav li>a{font-size:16px;font-weight:400;color:#313133;text-decoration:none;white-space:nowrap;
+  padding:14px 0;display:inline-block;transition:color .2s;}
+.cn-header .cn-nav li>a:hover,.cn-header .cn-nav li.active>a{color:#e62f43;}
+.cn-header .cn-submenu{display:none;position:absolute;top:100%;left:-14px;min-width:270px;background:#fff;
+  border:1px solid #edf0f5;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.12);padding:8px 0;
+  list-style:none;margin:6px 0 0;z-index:10001;}
+.cn-header .cn-nav li.has-dropdown:hover .cn-submenu{display:block;}
+.cn-header .cn-submenu li a{display:block;padding:11px 22px;font-size:14px;font-weight:500;color:#222938;
+  text-decoration:none;white-space:nowrap;transition:background .15s,color .15s;}
+.cn-header .cn-submenu li a:hover{background:#fff1f2;color:#e62f43;}
+.cn-header .cn-actions{display:flex;align-items:center;gap:14px;flex:0 0 auto;}
+.cn-header .cn-btn{background:#edf2f4;color:#e62f43;font-size:13px;font-weight:600;letter-spacing:.2px;
+  padding:13px 26px;border-radius:6px;text-decoration:none;white-space:nowrap;line-height:1;
+  display:inline-block;transition:background .2s,color .2s;}
+.cn-header .cn-btn:hover{background:#e62f43;color:#fff;}
+.cn-header .cn-toggle{display:none;background:none;border:0;font-size:26px;line-height:1;cursor:pointer;
+  color:#161922;padding:4px 6px;}
+.feature-pills-bar{top:90px;}
+@media (max-width:1024px){
+  .cn-header .cn-nav{display:none;}
+  .cn-header .cn-toggle{display:block;}
+}
+@media (max-width:560px){
+  .cn-header .cn-inner{height:70px;padding:0 16px;}
+  .cn-header .cn-logo img{width:150px;}
+  .cn-header .cn-btn{padding:11px 16px;font-size:12px;}
+  .feature-pills-bar{top:70px;}
+}
+</style>
 </head>
 
 <body class="wp-singular page-template-default page page-id-19 wp-embed-responsive wp-theme-download-THmqEAxcf source-iframe woocommerce-block-theme-has-button-styles  color-custom content-brightness-light input-brightness-light style-simple button-animation-fade layout-full-width if-disable no-content-padding no-shadows header-classic header-fw sticky-header sticky-tb-color ab-hide menu-arrow-top menuo-right menuo-no-borders subheader-both-center responsive-overflow-x-mobile mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-sticky mobile-header-mini mobile-icon-user-ss mobile-icon-wishlist-ss mobile-icon-search-ss mobile-icon-wpml-ss mobile-icon-action-ss be-page-19 be-reg-2831" >
@@ -301,71 +341,42 @@ body.cn-open { overflow: hidden !important; }
 		
 		<div id="Wrapper">
 
-	<div id="Header_wrapper" class="" >
-
-	<header id="Header">
-
-
-<div class="header_placeholder"></div>
-
-		<div id="Top_bar">
-			<div class="container">
-				<div class="column one">
-					<div class="top_bar_left clearfix">
-						<div class="logo"><a id="logo" href="index.html" title="BeAccountant 4 - Betheme" data-height="60" data-padding="15"><img class="logo-main scale-with-grid svg" src="images/accountant4.svg" data-retina="" data-height="" alt="accountant4" data-no-retina/><img class="logo-sticky scale-with-grid svg" src="images/accountant4.svg" data-retina="" data-height="" alt="accountant4" data-no-retina/><img class="logo-mobile scale-with-grid svg" src="images/accountant4.svg" data-retina="" data-height="" alt="accountant4" data-no-retina/><img class="logo-mobile-sticky scale-with-grid svg" src="images/accountant4.svg" data-retina="" data-height="" alt="accountant4" data-no-retina/></a></div>
-						<div class="menu_wrapper">
-							<nav id="menu">
-								<ul id="menu-main-menu" class="menu menu-main">
-									<li class="menu-item menu-item-type-custom menu-item-object-custom has-dropdown">
-										<a href="features.html"><span>Features <span class="dropdown-chevron"></span></span></a>
-										<ul class="sub-menu">
-											<li><a href="features.html#plan-advertising"><span>Plan Advertising (AI Ad Planner)</span></a></li>
-											<li><a href="features.html#research-ads"><span>Research Ads</span></a></li>
-											<li><a href="features.html#create-creatives"><span>Create Creatives</span></a></li>
-											<li><a href="features.html#launch-campaigns"><span>Launch Campaigns</span></a></li>
-											<li><a href="features.html#reach-engage"><span>Reach &amp; Engage</span></a></li>
-											<li><a href="features.html#analyze-improve"><span>Analyze &amp; Improve</span></a></li>
-										</ul>
-									</li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom has-dropdown">
-										<a href="use-cases.html"><span>Use Cases <span class="dropdown-chevron"></span></span></a>
-										<ul class="sub-menu">
-											<li><a href="use-cases.html#education"><span>Education</span></a></li>
-											<li><a href="use-cases.html#marketers"><span>Marketers</span></a></li>
-											<li><a href="use-cases.html#d2c"><span>For D2C</span></a></li>
-											<li><a href="use-cases.html#real-estate"><span>Real Estate</span></a></li>
-										</ul>
-									</li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom">
-										<a href="pricing.html"><span>Pricing</span></a>
-									</li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom">
-										<a href="how-it-works.html"><span>How It Works</span></a>
-									</li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom">
-										<a href="tutorials.html"><span>Tutorials</span></a>
-									</li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item page_item current_page_item">
-										<a href="contact.html"><span>Contact</span></a>
-									</li>
-								</ul>
-							</nav>
-							<a class="responsive-menu-toggle" href="#" aria-label="mobile menu"><i class="icon-menu-fine" aria-hidden="true"></i></a>
-						</div>
-					</div>
-					<div class="top_bar_right">
-						<div class="top_bar_right_wrapper">
-							<a href="contact.html" class="action_button" target="">Contact us</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<header class="cn-header">
+  <div class="cn-inner">
+    <a class="cn-logo" href="index.html" aria-label="BeAccountant home"><img src="images/accountant4.svg" alt="BeAccountant" /></a>
+    <nav class="cn-nav" aria-label="Primary">
+      <ul>
+        <li class="has-dropdown"><a href="features.html">Features</a>
+          <ul class="cn-submenu">
+            <li><a href="features.html#plan-advertising">Plan Advertising (AI Ad Planner)</a></li>
+            <li><a href="features.html#research-ads">Research Ads</a></li>
+            <li><a href="features.html#create-creatives">Create Creatives</a></li>
+            <li><a href="features.html#launch-campaigns">Launch Campaigns</a></li>
+            <li><a href="features.html#reach-engage">Reach &amp; Engage</a></li>
+            <li><a href="features.html#analyze-improve">Analyze &amp; Improve</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="use-cases.html">Use Cases</a>
+          <ul class="cn-submenu">
+            <li><a href="use-cases.html#education">Education</a></li>
+            <li><a href="use-cases.html#marketers">Marketers</a></li>
+            <li><a href="use-cases.html#d2c">For D2C</a></li>
+            <li><a href="use-cases.html#real-estate">Real Estate</a></li>
+          </ul>
+        </li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cn-actions">
+      <a class="cn-btn" href="contact.html">Contact us</a>
+      <button class="cn-toggle mobile-toggle" aria-label="Open menu">&#9776;</button>
+    </div>
+  </div>
 </header>
-	
-</div>
-
-		<!-- mfn_hook_content_before --><!-- mfn_hook_content_before -->
+<!-- mfn_hook_content_before --><!-- mfn_hook_content_before -->
 	
 
 <div id="Content" role="main">
