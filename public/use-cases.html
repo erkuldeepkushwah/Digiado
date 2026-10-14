@@ -161,85 +161,72 @@ body.cn-open { overflow: hidden; }
 }
 </style>
 <style id="edu-section-style">
-/* ===== Education Use-Case Section ===== */
-.edu-section{scroll-margin-top:150px;}
-.edu-section *,.edu-section *::before,.edu-section *::after{box-sizing:border-box;}
+/* ===== Use Cases: Education section ===== */
+.edu { padding: 40px 0 70px; scroll-margin-top: 120px; }
+.edu-hero { background: linear-gradient(135deg,#0e57e8 0%,#0a3fb0 100%); color:#fff; border-radius:24px; padding:56px 40px; text-align:center; }
+.edu-badge { display:inline-block; background:rgba(255,255,255,0.16); color:#fff; border:1px solid rgba(255,255,255,0.40); padding:6px 16px; border-radius:50px; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:20px; }
+.edu-hero h2 { color:#fff; font-size:42px; line-height:1.15; max-width:900px; margin:0 auto 18px; }
+.edu-hero h2 .hl { color:#bcd2ff; }
+.edu-hero-sub { color:#dbe6ff; font-size:17px; line-height:1.6; max-width:780px; margin:0 auto 16px; }
+.edu-hero-sub strong { color:#fff; }
+.edu-trust { color:#bcd2ff; font-size:14px; font-weight:600; margin-bottom:26px; }
+.edu-cta { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom:34px; }
+.edu-btn-light { background:rgba(255,255,255,0.14); color:#fff; }
+.edu-btn-light:hover { background:rgba(255,255,255,0.24); color:#fff; }
+.edu-stats { display:flex; justify-content:center; gap:18px; flex-wrap:wrap; }
+.edu-stat { background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); border-radius:14px; padding:16px 26px; min-width:150px; }
+.edu-stat .num { font-size:30px; font-weight:800; color:#fff; }
+.edu-stat .label { font-size:12px; color:#dbe6ff; text-transform:uppercase; letter-spacing:.5px; font-weight:600; }
 
-.edu-hero{position:relative;background:linear-gradient(135deg,#0e57e8 0%,#0a3fb0 100%);color:#fff;border-radius:24px;padding:56px 48px;overflow:hidden;box-shadow:0 24px 60px rgba(14,87,232,.22);}
-.edu-hero::after{content:"";position:absolute;top:-90px;right:-90px;width:340px;height:340px;background:rgba(255,255,255,.08);border-radius:50%;}
-.edu-hero::before{content:"";position:absolute;bottom:-120px;left:-60px;width:260px;height:260px;background:rgba(255,255,255,.06);border-radius:50%;}
-.edu-badge{position:relative;display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);color:#fff;padding:6px 16px;border-radius:50px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;margin-bottom:18px;}
-.edu-hero-title{position:relative;color:#fff;font-size:40px;line-height:1.2;max-width:720px;margin:0 0 16px;}
-.edu-hero-sub{position:relative;color:#d5e2fb;font-size:17px;line-height:1.7;max-width:660px;margin:0 0 28px;}
-.edu-hero-actions{position:relative;display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px;}
-.edu-hero .btn-primary{background:#fff;color:#0e57e8;}
-.edu-hero .btn-primary:hover{background:#eef4fe;color:#0b46b8;}
-.edu-hero-actions .btn-ghost{background:rgba(255,255,255,.12);color:#fff;padding:12px 24px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;border:1px solid rgba(255,255,255,.35);transition:background .2s;}
-.edu-hero-actions .btn-ghost:hover{background:rgba(255,255,255,.22);color:#fff;}
-.edu-hero-stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-.edu-stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:20px 18px;text-align:center;}
-.edu-stat .num{font-size:28px;font-weight:800;color:#fff;line-height:1;}
-.edu-stat .label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:#cddcfa;margin-top:8px;}
+.edu-block { padding:56px 0; border-bottom:1px solid #f1f5f9; }
+.edu-block:last-child { border-bottom:0; padding-bottom:10px; }
+.edu-eyebrow { display:inline-block; color:#0e57e8; font-weight:700; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:12px; }
+.edu-h { font-size:32px; line-height:1.25; color:#161922; margin:0 0 14px; }
+.edu-lead { font-size:16px; line-height:1.7; color:#64748b; max-width:780px; margin:0 0 34px; }
 
-.edu-block{margin-top:56px;}
-.edu-block-head{display:flex;align-items:center;gap:12px;margin-bottom:8px;}
-.edu-block-kicker{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#0e57e8;}
-.edu-block-title{font-size:28px;color:#161922;margin:0 0 10px;}
-.edu-block-lead{font-size:16px;line-height:1.7;color:#64748b;max-width:780px;margin:0 0 28px;}
+.edu-grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.edu-grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+.edu-card { background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:26px; box-shadow:0 10px 26px rgba(0,0,0,0.04); }
+.edu-card h4 { font-size:18px; color:#161922; margin:0 0 10px; }
+.edu-card p { font-size:15px; line-height:1.65; color:#475569; margin:0 0 12px; }
+.edu-card p:last-child { margin-bottom:0; }
+.edu-center { text-align:center; }
+.edu-strong { font-weight:700; color:#161922; }
+.edu-list { list-style:none; padding:0; margin:0; }
+.edu-list li { position:relative; padding-left:24px; margin-bottom:9px; font-size:14px; color:#475569; line-height:1.5; }
+.edu-list li:last-child { margin-bottom:0; }
+.edu-list li::before { content:"\2713"; position:absolute; left:0; color:#0e57e8; font-weight:700; }
+.edu-example { background:#eef4fe; border:1px solid #dce9fd; border-radius:12px; padding:12px 14px; margin-top:12px; }
+.edu-ex-label { display:inline-block; font-size:12px; font-weight:700; color:#0e57e8; margin-bottom:4px; }
+.edu-example p { font-size:13.5px; color:#334155; margin:0; line-height:1.55; }
+.edu-chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.edu-chips span { background:#f1f5f9; color:#475569; border-radius:30px; padding:6px 14px; font-size:12.5px; font-weight:600; }
+.edu-msg-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px; }
+.edu-msg { background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px; }
+.edu-msg-head { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:#0e57e8; margin-bottom:8px; }
+.edu-msg p { font-size:13px; color:#334155; line-height:1.55; margin:0 0 8px; }
+.edu-msg p a { color:#0e57e8; }
+.edu-msg-foot { font-size:11.5px; color:#94a3b8; font-weight:600; }
 
-.edu-grid{display:grid;gap:20px;}
-.edu-grid-2{grid-template-columns:repeat(2,1fr);}
-.edu-grid-3{grid-template-columns:repeat(3,1fr);}
-.edu-grid-4{grid-template-columns:repeat(4,1fr);}
+.edu-callout { margin-top:34px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:16px; padding:28px; text-align:center; }
+.edu-callout p { font-size:17px; color:#334155; margin:0 0 18px; }
+.edu-callout p strong { color:#161922; }
+.edu-note { font-size:13px; color:#94a3b8; margin:12px 0 0; }
 
-.edu-card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s;}
-.edu-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(14,87,232,.12);border-color:#c7d8fb;}
-.edu-card-icon{width:46px;height:46px;border-radius:12px;background:#dce9fd;color:#0e57e8;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:16px;}
-.edu-card h4{font-size:17px;color:#161922;margin:0 0 8px;}
-.edu-card p{font-size:14px;line-height:1.65;color:#64748b;margin:0;}
-
-.edu-challenge{background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid #0e57e8;border-radius:0 14px 14px 0;padding:22px 24px;}
-.edu-challenge h4{font-size:16px;margin:0 0 8px;color:#161922;}
-.edu-challenge p{font-size:14px;line-height:1.65;color:#64748b;margin:0;}
-
-.edu-example{background:linear-gradient(135deg,#f8fafc 0%,#eef4fe 100%);border:1px solid #dbe6fb;border-radius:16px;padding:24px;}
-.edu-example .tag{display:inline-block;background:#0e57e8;color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 12px;border-radius:50px;margin-bottom:14px;}
-.edu-example h4{font-size:16px;margin:0 0 8px;color:#161922;}
-.edu-example p{font-size:14px;line-height:1.65;color:#64748b;margin:0 0 14px;}
-.edu-example .result{font-size:13px;font-weight:700;color:#0e57e8;}
-
-.edu-model{text-align:center;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:26px 20px;transition:transform .2s,box-shadow .2s,border-color .2s;}
-.edu-model:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(14,87,232,.12);border-color:#c7d8fb;}
-.edu-model .ico{font-size:26px;margin-bottom:12px;}
-.edu-model h4{font-size:16px;margin:0 0 8px;color:#161922;}
-.edu-model p{font-size:13.5px;line-height:1.6;color:#64748b;margin:0;}
-
-.edu-process{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:edu-step;}
-.edu-step{position:relative;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:30px 22px 24px;}
-.edu-step::before{counter-increment:edu-step;content:counter(edu-step);position:absolute;top:-16px;left:22px;width:34px;height:34px;border-radius:50%;background:#0e57e8;color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(14,87,232,.35);}
-.edu-step h4{font-size:15.5px;margin:6px 0 8px;color:#161922;}
-.edu-step p{font-size:13.5px;line-height:1.6;color:#64748b;margin:0;}
-
-.edu-cta{margin-top:56px;background:#0e57e8;border-radius:20px;padding:44px 40px;text-align:center;color:#fff;}
-.edu-cta h3{color:#fff;font-size:26px;margin:0 0 12px;}
-.edu-cta p{color:#cddcfa;font-size:16px;max-width:560px;margin:0 auto 26px;line-height:1.6;}
-.edu-cta .btn-primary{background:#fff;color:#0e57e8;}
-.edu-cta .btn-primary:hover{background:#eef4fe;color:#0b46b8;}
+.edu-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.edu-step { background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:26px; box-shadow:0 10px 26px rgba(0,0,0,0.04); }
+.edu-n { display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; background:#0e57e8; color:#fff; font-weight:800; font-size:17px; margin-bottom:14px; }
+.edu-step h4 { font-size:18px; color:#161922; margin:0 0 10px; }
+.edu-step p { font-size:15px; line-height:1.65; color:#475569; margin:0; }
 
 @media (max-width:960px){
-  .edu-hero{padding:40px 26px;}
-  .edu-hero-title{font-size:30px;}
-  .edu-hero-stats{grid-template-columns:repeat(2,1fr);}
-  .edu-grid-3,.edu-grid-4{grid-template-columns:repeat(2,1fr);}
-  .edu-process{grid-template-columns:repeat(2,1fr);}
-}
-@media (max-width:600px){
-  .edu-grid-2,.edu-grid-3,.edu-grid-4,.edu-process{grid-template-columns:1fr;}
-  .edu-hero-stats{grid-template-columns:1fr 1fr;}
-  .edu-block-title{font-size:23px;}
+  .edu-grid-3, .edu-grid-2, .edu-steps { grid-template-columns:1fr; }
+  .edu-hero h2 { font-size:30px; }
+  .edu-h { font-size:26px; }
+  .edu-hero { padding:40px 22px; }
+  .edu-msg-grid { grid-template-columns:1fr; }
 }
 </style>
-
 </head>
 <body>
 
@@ -300,90 +287,199 @@ body.cn-open { overflow: hidden; }
 <div class="cases-container">
 
   <!-- 1. Education -->
-  <section id="education" class="edu-section">
-
+  <section id="education" class="edu">
     <div class="edu-hero">
-      <span class="edu-badge">EdTech &amp; Learning</span>
-      <h2 class="edu-hero-title">Education &amp; Academic Enrollments</h2>
-      <p class="edu-hero-sub">Student recruitment is a trust game played across a long decision cycle. Codellio turns scattered search intent, webinars, and social proof into a single automated enrollment funnel &mdash; from the first prospect query to the confirmed seat.</p>
-      <div class="edu-hero-actions">
-        <a href="contact.html" class="btn-primary">Get Education Playbook</a>
-        <a href="pricing.html" class="btn-ghost">Compare Plans</a>
+      <span class="edu-badge">Built for Schools, Colleges, Coaching Centers &amp; Tutors</span>
+      <h2>Fill Your Classrooms Faster with <span class="hl">AI-Powered Ads</span> Created in Minutes</h2>
+      <p class="edu-hero-sub">digiAd AI helps <strong>Schools</strong>, <strong>Colleges</strong>, <strong>Coaching Centers</strong>, <strong>Online Classes</strong> and <strong>Home Tutors</strong> attract more students with high-performing ads across Google, Facebook, Instagram, YouTube, Snapchat, and X — without learning complex ad tools.</p>
+      <p class="edu-trust">Trusted by schools, colleges and coaching centers</p>
+      <div class="edu-cta">
+        <a href="pricing.html" class="btn-primary">Start Free Trial</a>
+        <a href="contact.html" class="btn-secondary edu-btn-light">Book a Free Demo</a>
       </div>
-      <div class="edu-hero-stats">
-        <div class="edu-stat"><div class="num">+312%</div><div class="label">Course Enrollments</div></div>
-        <div class="edu-stat"><div class="num">-44%</div><div class="label">Cost Per Acquisition</div></div>
-        <div class="edu-stat"><div class="num">2.1x</div><div class="label">Webinar Attendance</div></div>
-        <div class="edu-stat"><div class="num">1,400</div><div class="label">Students Enrolled / Qtr</div></div>
-      </div>
-    </div>
-
-    <div class="edu-block">
-      <div class="edu-block-head"><span class="edu-block-kicker">The Challenge</span></div>
-      <h3 class="edu-block-title">Why enrollment marketing stalls</h3>
-      <p class="edu-block-lead">Education buyers research for weeks, compare outcomes, and need reassurance before they commit. Most institutes lose students to slow follow-up and generic messaging rather than to a better competitor.</p>
-      <div class="edu-grid edu-grid-3">
-        <div class="edu-challenge"><h4>Long, multi-touch cycles</h4><p>A single student may see 7&ndash;12 touchpoints across search, social, and email before enquiring. Manual teams drop the thread halfway.</p></div>
-        <div class="edu-challenge"><h4>Wasted, unqualified leads</h4><p>Broad campaigns fill your CRM with prospects who never intended to enrol, inflating cost per admission.</p></div>
-        <div class="edu-challenge"><h4>Seasonal demand spikes</h4><p>Intake windows concentrate demand into a few weeks. Budget that is not paced to the calendar burns out before the peak.</p></div>
+      <div class="edu-stats">
+        <div class="edu-stat"><div class="num">127</div><div class="label">New Leads</div></div>
+        <div class="edu-stat"><div class="num">3.2X</div><div class="label">ROI</div></div>
+        <div class="edu-stat"><div class="num">₹85</div><div class="label">Cost per Lead</div></div>
       </div>
     </div>
 
     <div class="edu-block">
-      <div class="edu-block-head"><span class="edu-block-kicker">What Codellio Does</span></div>
-      <h3 class="edu-block-title">Built for education marketers</h3>
-      <p class="edu-block-lead">Every feature maps to a step in the student journey &mdash; capture intent, nurture trust, and convert at the moment of decision.</p>
-      <div class="edu-grid edu-grid-3">
-        <div class="edu-card"><div class="edu-card-icon">&#127891;</div><h4>Course &amp; Degree Lead Capture</h4><p>Automatically matches students searching for bootcamps, MBA programs, and online diplomas, and routes them to the right intake form.</p></div>
-        <div class="edu-card"><div class="edu-card-icon">&#127909;</div><h4>Webinar &amp; Demo Sequencing</h4><p>Automated reminders, calendar holds, and retargeting ads that bring live-attendee rates up to double.</p></div>
-        <div class="edu-card"><div class="edu-card-icon">&#128205;</div><h4>Localized Campus Radius Ads</h4><p>Target high schools, feeder colleges, and commuter zones with localized tuition-grant messaging.</p></div>
-        <div class="edu-card"><div class="edu-card-icon">&#127908;</div><h4>Social-Proof Video Creatives</h4><p>Generate alumni and student-story ad variants that answer objections with real outcomes.</p></div>
-        <div class="edu-card"><div class="edu-card-icon">&#128202;</div><h4>Intake-Calendar Pacing</h4><p>Budget shifts automatically toward your highest-intent weeks as the admission deadline approaches.</p></div>
-        <div class="edu-card"><div class="edu-card-icon">&#128231;</div><h4>CRM &amp; WhatsApp Handoff</h4><p>Qualified leads sync instantly to your CRM or counsellor inbox, with source and score attached.</p></div>
+      <span class="edu-eyebrow">The Challenge</span>
+      <h3 class="edu-h">Stop Struggling with Admissions Marketing</h3>
+      <p class="edu-lead">Sound familiar? You're not alone. These are the top challenges educators face every admissions season.</p>
+      <div class="edu-grid-3">
+        <div class="edu-card">
+          <h4>Low Enrollments &amp; Visibility</h4>
+          <p>You offer excellent education, but parents and students in your area just aren't finding you. Your classrooms have empty seats while competitors fill up.</p>
+        </div>
+        <div class="edu-card">
+          <h4>Overwhelmed by Digital Marketing</h4>
+          <p>You're an educator, not a digital marketer. Managing ads across Facebook, Google, Instagram, and YouTube feels impossible — and who has the time?</p>
+        </div>
+        <div class="edu-card">
+          <h4>No Visibility into ROI</h4>
+          <p>How many of your website visitors actually enrolled? Without proper tracking, you're flying blind on what's actually working and what's wasting money.</p>
+        </div>
+      </div>
+      <div class="edu-callout">
+        <p><strong>There's a better way.</strong> Let AI handle your marketing.</p>
+        <a href="#edu-features" class="btn-primary">See How digiAd AI Helps</a>
+      </div>
+    </div>
+
+    <div class="edu-block" id="edu-features">
+      <span class="edu-eyebrow">Features</span>
+      <h3 class="edu-h">Everything You Need to Grow Your Institution</h3>
+      <p class="edu-lead">Powerful AI tools designed specifically for education marketing. No marketing degree required.</p>
+      <div class="edu-grid-2">
+
+        <div class="edu-card edu-feature">
+          <h4>Multi-Channel Campaigns</h4>
+          <p class="edu-strong">Run ads everywhere from one place.</p>
+          <p>Reach parents on Facebook and Instagram while targeting students on YouTube and Snapchat — all from a single, easy dashboard. No more juggling multiple ad accounts.</p>
+          <div class="edu-example"><span class="edu-ex-label">💡 Example</span><p>A coaching center can run "JEE Crash Course" ads on YouTube for students AND "Expert Faculty" ads on Facebook for parents simultaneously.</p></div>
+        </div>
+
+        <div class="edu-card edu-feature">
+          <h4>Auto Creative Generation</h4>
+          <p class="edu-strong">Professional visuals in seconds, not hours.</p>
+          <p>Generate beautiful "Admissions Open" posters, "New Course" announcements, and short video ads instantly. Just add your logo and let AI do the design work.</p>
+          <div class="edu-chips"><span>Posts</span><span>Stories</span><span>Videos</span><span>Banners</span></div>
+          <div class="edu-example"><span class="edu-ex-label">💡 Example</span><p>Create a complete "Summer Camp" campaign with 10+ creative variants in under 5 minutes.</p></div>
+        </div>
+
+        <div class="edu-card edu-feature">
+          <h4>Audience Targeting Templates</h4>
+          <p class="edu-strong">Reach the right people instantly.</p>
+          <p>Use pre-built audiences designed specifically for education: parents with toddlers, high school students, working professionals seeking upskilling, local neighborhood targeting, and more.</p>
+          <div class="edu-chips"><span>👶 Parents of Toddlers</span><span>🎓 Engineering Aspirants</span><span>💼 Working Professionals</span><span>📍 Local (1-5km)</span></div>
+          <div class="edu-example"><span class="edu-ex-label">💡 Example</span><p>A play school can target "Parents with children aged 2-5 within 3km" with just one click.</p></div>
+        </div>
+
+        <div class="edu-card edu-feature">
+          <h4>WhatsApp &amp; SMS Messaging</h4>
+          <p class="edu-strong">Reach parents &amp; students instantly on their phones.</p>
+          <p>Send personalized or bulk messages via WhatsApp and SMS (powered by Twilio). Nurture leads, send admission reminders, share demo class links, and keep students engaged — all from one platform.</p>
+          <div class="edu-msg-grid">
+            <div class="edu-msg">
+              <div class="edu-msg-head">WhatsApp Message</div>
+              <p>Hi Ales!<br>Just a reminder: Mike's demo class is tomorrow at 10 AM. See you at Bright Future Academy!</p>
+              <div class="edu-msg-foot">Sent to 127 parents</div>
+            </div>
+            <div class="edu-msg">
+              <div class="edu-msg-head">SMS Follow-up</div>
+              <p>Thank you for attending the demo! Admission closes Dec 15. Book your seat: <a href="https://digiad.ai">https://digiad.ai</a></p>
+              <div class="edu-msg-foot">Auto-sent after demo</div>
+            </div>
+          </div>
+          <div class="edu-example"><span class="edu-ex-label">💡 Example</span><p>Automatically send a WhatsApp reminder to parents 1 day before their child's demo class, then follow up with admission details after the session.</p></div>
+          <div class="edu-chips"><span>Personalized Messages</span><span>Bulk Broadcasts</span></div>
+        </div>
+
+        <div class="edu-card edu-feature">
+          <h4>Performance Tracking</h4>
+          <p>Know exactly what works. See which ads bring actual inquiries and enrollments — not just clicks.</p>
+        </div>
+
+        <div class="edu-card edu-feature">
+          <h4>Smart Budget Optimization</h4>
+          <p>AI automatically shifts your budget to the best-performing channels to maximize your ROI.</p>
+        </div>
+
+        <div class="edu-card edu-feature">
+          <h4>Scheduling &amp; Automation</h4>
+          <p>Plan your entire year's campaigns: admission season, exam prep batches, summer courses, events.</p>
+        </div>
+
       </div>
     </div>
 
     <div class="edu-block">
-      <div class="edu-block-head"><span class="edu-block-kicker">Examples</span></div>
-      <h3 class="edu-block-title">Campaigns institutes run with Codellio</h3>
-      <p class="edu-block-lead">Three proven playbooks you can launch in a day.</p>
-      <div class="edu-grid edu-grid-3">
-        <div class="edu-example"><span class="tag">Playbook</span><h4>MBA intake sprint</h4><p>Search-intent ads plus a four-email nurture with alumni video testimonials, retargeted to everyone who viewed the curriculum page.</p><span class="result">Result: 3.1x qualified applications</span></div>
-        <div class="edu-example"><span class="tag">Playbook</span><h4>Bootcamp free-trial funnel</h4><p>A free intro-class ad leads to a WhatsApp reminder sequence and an enrollment offer with a 48-hour deadline.</p><span class="result">Result: -44% cost per enrolment</span></div>
-        <div class="edu-example"><span class="tag">Playbook</span><h4>School admission radius</h4><p>Geo-fenced ads around feeder neighbourhoods promoting an open-house day, with SMS reminders to RSVPs.</p><span class="result">Result: 2.1x open-house footfall</span></div>
+      <h3 class="edu-h">Explore Our Examples</h3>
+      <p class="edu-lead">Discover our AI-powered creations across images, videos, and avatars</p>
+      <div class="edu-grid-3">
+        <div class="edu-card edu-center"><h4>Images</h4><p>View AI-generated images</p></div>
+        <div class="edu-card edu-center"><h4>Videos</h4><p>Explore video examples</p></div>
+        <div class="edu-card edu-center"><h4>AI Avatars</h4><p>See AI avatar creations</p></div>
       </div>
     </div>
 
     <div class="edu-block">
-      <div class="edu-block-head"><span class="edu-block-kicker">Educator Models</span></div>
-      <h3 class="edu-block-title">Fits every kind of education business</h3>
-      <p class="edu-block-lead">Codellio templates adapt to your intake model, ticket size, and admissions process.</p>
-      <div class="edu-grid edu-grid-4">
-        <div class="edu-model"><div class="ico">&#127979;</div><h4>K-12 Schools</h4><p>Localized admission drives, open-house funnels, and sibling-referral campaigns.</p></div>
-        <div class="edu-model"><div class="ico">&#127891;</div><h4>Colleges &amp; Universities</h4><p>Program-level recruitment, international-student targeting, and scholarship messaging.</p></div>
-        <div class="edu-model"><div class="ico">&#128187;</div><h4>EdTech &amp; Bootcamps</h4><p>High-velocity paid funnels, cohort deadlines, and outcome-based creative.</p></div>
-        <div class="edu-model"><div class="ico">&#128218;</div><h4>Coaching &amp; Test Prep</h4><p>Exam-season pacing, faculty-led webinars, and parent-focused trust ads.</p></div>
+      <span class="edu-eyebrow">For Every Educator</span>
+      <h3 class="edu-h">Tailored for Your Educational Model</h3>
+      <p class="edu-lead">Whether you run a preschool or a professional coaching center, digiAd AI delivers results that matter to you.</p>
+      <div class="edu-grid-3">
+        <div class="edu-card">
+          <h4>Play Schools</h4>
+          <ul class="edu-list">
+            <li>Dominate local discovery for nearby parents</li>
+            <li>Create parent-oriented ads</li>
+            <li>Promote admissions for new session</li>
+            <li>Share facility/safety/teaching environment in visuals/videos</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <h4>K-12 Schools</h4>
+          <ul class="edu-list">
+            <li>Run admission-drive ads</li>
+            <li>Fill seats faster for the academic year</li>
+            <li>Showcase facilities and faculty effectively</li>
+            <li>Share student success stories</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <h4>Colleges</h4>
+          <ul class="edu-list">
+            <li>Promote courses/programmes to attract students</li>
+            <li>Target local + out-of-town students</li>
+            <li>Highlight placements or achievements</li>
+            <li>Show campus tours (via video ads)</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <h4>Coaching Centers</h4>
+          <ul class="edu-list">
+            <li>Advertise upcoming batches, demo classes</li>
+            <li>Capture demand during peak exam seasons</li>
+            <li>Highlight success stories &amp; rank holders</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <h4>Online Tutors</h4>
+          <ul class="edu-list">
+            <li>Reach students beyond your geography</li>
+            <li>Run ads for specific courses</li>
+            <li>Fill demo classes with qualified leads</li>
+            <li>Create creative content even without in-house designers</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <h4>Home Tutors</h4>
+          <ul class="edu-list">
+            <li>Build a steady pipeline of local students</li>
+            <li>Promote subject-specific offerings</li>
+            <li>Create professional creatives and short videos instantly</li>
+            <li>Establish a professional personal brand</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="edu-block">
-      <div class="edu-block-head"><span class="edu-block-kicker">Process</span></div>
-      <h3 class="edu-block-title">From brief to enrolled cohort in four steps</h3>
-      <p class="edu-block-lead">A guided workflow your admissions team can run without a dedicated media buyer.</p>
-      <ol class="edu-process">
-        <li class="edu-step"><h4>Plan the intake</h4><p>Set your programs, target regions, and admission deadline. The AI Ad Planner builds a channel mix around them.</p></li>
-        <li class="edu-step"><h4>Launch creatives</h4><p>Generate student-story videos, search copy, and lead forms in minutes from one brief.</p></li>
-        <li class="edu-step"><h4>Nurture the pipeline</h4><p>Automated reminders and retargeting keep prospects warm across the long decision cycle.</p></li>
-        <li class="edu-step"><h4>Optimize &amp; enrol</h4><p>Spend shifts toward the best-converting angles, and qualified leads sync straight to your counsellors.</p></li>
-      </ol>
+      <span class="edu-eyebrow">Simple Process</span>
+      <h3 class="edu-h">Launch Your First Campaign in Minutes</h3>
+      <p class="edu-lead">No marketing experience needed. If you can send an email, you can run successful ads.</p>
+      <div class="edu-steps">
+        <div class="edu-step"><span class="edu-n">1</span><h4>Define Goal &amp; Audience</h4><p>Define a goal: Admissions Drive, Demo Class Signup, Course Launch, or Event.</p></div>
+        <div class="edu-step"><span class="edu-n">2</span><h4>Auto-Generate Creatives</h4><p>Our AI creates professional ad copy and visuals tailored to your institution. Review, tweak if you want, or let auto-approved variants go live.</p></div>
+        <div class="edu-step"><span class="edu-n">3</span><h4>Launch &amp; Optimize</h4><p>Go live across all channels instantly. Watch leads roll in on your dashboard while AI continuously optimizes your budget for lowest cost per lead.</p></div>
+      </div>
+      <div class="edu-callout">
+        <a href="pricing.html" class="btn-primary">&#9654; Start Your First Campaign Now</a>
+        <p class="edu-note">No credit card required • Free for 7 days</p>
+      </div>
     </div>
-
-    <div class="edu-cta">
-      <h3>Ready to fill your next cohort?</h3>
-      <p>Get the education playbook, industry templates, and a walkthrough of the enrollment funnel built for your programs.</p>
-      <a href="contact.html" class="btn-primary">Get Education Playbook</a>
-    </div>
-
   </section>
 
   <!-- 2. Marketers -->
