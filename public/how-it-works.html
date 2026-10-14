@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>How It Works | digiAd AI Ads Setup &amp; Campaign Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="Follow our comprehensive guide to set up your brand, connect ad accounts, and create powerful AI-driven campaigns that deliver exceptional results with digiAd AI." />
+
+<link rel='stylesheet' href='https://themes.muffingroup.com/be/accountant4/wp-content/themes/download-THmqEA.xcf/css/be.css?ver=28.3.1' media='all' />
+<link rel='stylesheet' href='https://themes.muffingroup.com/be/accountant4/wp-content/themes/download-THmqEA.xcf/fonts/fontawesome/fontawesome.css?ver=28.3.1' media='all' />
+<link rel='stylesheet' href='https://themes.muffingroup.com/be/accountant4/wp-content/themes/download-THmqEA.xcf/css/responsive.css?ver=28.3.1' media='all' />
+
+<style>
+body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #596579; margin: 0; background: #fff; line-height: 1.6; }
+h1,h2,h3,h4,h5,h6 { font-family: 'DM Sans', sans-serif; color: #161922; font-weight: 700; margin-top: 0; }
+a { color: #e62f43; text-decoration: none; }
+a:hover { color: #c81d30; }
+
+#Top_bar { background: #fff; border-bottom: 1px solid #edf2f7; position: sticky; top: 0; z-index: 1000; }
+#Top_bar .container { max-width: 1240px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+.logo-brand { font-size: 24px; font-weight: 800; color: #161922; display: flex; align-items: center; text-decoration: none; }
+.logo-brand span { color: #e62f43; }
+
+.main-nav { display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; }
+.main-nav > li { position: relative; }
+.main-nav > li > a { font-size: 15px; font-weight: 600; color: #333d4b; display: inline-flex; align-items: center; gap: 5px; padding: 8px 0; text-decoration: none; transition: color .2s; }
+.main-nav > li > a:hover, .main-nav > li.active > a { color: #e62f43; }
+
+.dropdown-chevron { display: inline-block; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); margin-top: -3px; margin-left: 4px; transition: transform 0.2s ease; }
+.main-nav > li.has-dropdown:hover .dropdown-chevron { transform: rotate(-135deg); margin-top: 3px; }
+
+.dropdown-menu { display: none; position: absolute; top: 100%; left: -10px; min-width: 280px; background: #fff; box-shadow: 0 18px 40px rgba(0,0,0,0.12); border: 1px solid #edf0f5; border-radius: 12px; padding: 10px 0; list-style: none; margin: 8px 0 0 0; z-index: 10000; animation: cdFade .2s ease forwards; }
+.main-nav > li.has-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu li a { display: block; padding: 11px 22px; font-size: 14px; font-weight: 500; color: #222938; text-decoration: none; transition: background .15s, color .15s, padding-left .15s; }
+.dropdown-menu li a:hover { background: #fff1f2; color: #e62f43; padding-left: 26px; }
+
+.header-cta { display: flex; align-items: center; gap: 14px; }
+.btn-primary { background: #e62f43; color: #fff; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: background .2s, transform .2s; border: none; cursor: pointer; }
+.btn-primary:hover { background: #d01c30; color: #fff; transform: translateY(-1px); }
+.btn-secondary { background: #edf2f7; color: #161922; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: background .2s; border: 1px solid #e2e8f0; }
+.btn-secondary:hover { background: #e2e8f0; color: #161922; }
+
+/* Subheader Hero */
+.hero-hiw { background: linear-gradient(135deg, #161922 0%, #1f2738 100%); color: #fff; padding: 80px 24px 65px; text-align: center; }
+.hero-hiw .badge { display: inline-block; background: rgba(230, 47, 67, 0.18); color: #ff6b7d; border: 1px solid rgba(230, 47, 67, 0.35); padding: 6px 18px; border-radius: 50px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 22px; }
+.hero-hiw h1 { color: #fff; font-size: 46px; line-height: 1.18; max-width: 880px; margin: 0 auto 18px; }
+.hero-hiw p.subtitle { color: #cbd5e1; font-size: 18px; max-width: 740px; margin: 0 auto 36px; line-height: 1.6; }
+
+/* Content Section Wrapper */
+.guide-container { max-width: 1200px; margin: 0 auto; padding: 60px 24px 80px; }
+
+/* Section Header */
+.section-header { text-align: center; margin-bottom: 48px; }
+.section-header .section-tag { font-size: 13px; font-weight: 800; color: #e62f43; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; display: inline-block; }
+.section-header h2 { font-size: 36px; margin-bottom: 12px; }
+.section-header p { font-size: 16px; color: #64748b; max-width: 640px; margin: 0 auto; }
+
+/* Connected Platforms & Channels Grid */
+.platforms-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-bottom: 70px; }
+.platform-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 22px 18px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.02); transition: transform .2s, border-color .2s, box-shadow .2s; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.platform-card:hover { transform: translateY(-3px); border-color: #e62f43; box-shadow: 0 12px 28px rgba(230, 47, 67, 0.08); }
+.p-icon { width: 44px; height: 44px; border-radius: 12px; background: #f8fafc; border: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #161922; font-weight: bold; }
+.p-icon.accent { background: #fee2e2; color: #e62f43; border-color: #fecaca; }
+.platform-card .p-name { font-size: 14px; font-weight: 700; color: #161922; margin: 0; }
+.platform-card .p-status { font-size: 11px; font-weight: 700; color: #10b981; background: #ecfdf5; padding: 2px 8px; border-radius: 10px; }
+
+/* 6-Step Guide for Creating Ad Creatives */
+.steps-timeline { display: flex; flex-direction: column; gap: 24px; margin-bottom: 80px; }
+.step-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 32px 36px; display: grid; grid-template-columns: 80px 1fr; gap: 28px; align-items: flex-start; box-shadow: 0 8px 24px rgba(0,0,0,0.03); transition: border-color .2s; }
+.step-card:hover { border-color: #cbd5e1; }
+.step-badge { width: 64px; height: 64px; border-radius: 18px; background: linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%); border: 2px solid rgba(230, 47, 67, 0.25); color: #e62f43; font-size: 28px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.step-body h3 { font-size: 22px; color: #161922; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+.step-points { list-style: none; padding: 0; margin: 0; }
+.step-points li { position: relative; padding-left: 20px; margin-bottom: 8px; font-size: 15px; color: #475569; line-height: 1.6; }
+.step-points li::before { content: '•'; position: absolute; left: 4px; color: #e62f43; font-weight: bold; font-size: 18px; line-height: 1; }
+
+/* Bottom CTA Banner */
+.ready-banner { background: #161922; color: #fff; border-radius: 24px; padding: 70px 40px; text-align: center; margin-bottom: 40px; }
+.ready-banner h2 { color: #fff; font-size: 38px; margin-bottom: 14px; }
+.ready-banner p.main-p { color: #cbd5e1; font-size: 18px; max-width: 650px; margin: 0 auto 12px; }
+.ready-banner p.tagline { color: #ff6b7d; font-size: 15px; font-weight: 700; letter-spacing: .5px; margin-bottom: 32px; }
+
+/* Footer */
+footer { background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 60px 24px 30px; }
+.footer-container { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 40px; }
+.footer-brand h4 { font-size: 20px; margin-bottom: 6px; color: #161922; }
+.footer-brand p { font-size: 14px; line-height: 1.6; color: #64748b; margin-top: 12px; max-width: 360px; }
+.footer-col h5 { font-size: 15px; margin-bottom: 18px; color: #161922; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 10px; font-size: 14px; }
+.footer-links a { color: #64748b; font-size: 14px; text-decoration: none; }
+.footer-links a:hover { color: #e62f43; }
+.footer-contact-link { display: block; font-weight: 700; color: #161922; font-size: 15px; margin-top: 6px; }
+.footer-bottom { max-width: 1240px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid #e2e8f0; font-size: 13px; color: #94a3b8; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+
+/* Mobile Menu */
+.mobile-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: #161922; }
+#cn-backdrop { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.5); opacity: 0; visibility: hidden; transition: opacity .25s ease; z-index: 99998; }
+#cn-menu { position: fixed; top: 0; right: 0; bottom: 0; width: 300px; max-width: 85%; background: #fff; box-shadow: -4px 0 24px rgba(0,0,0,.15); transform: translateX(105%); transition: transform .25s ease; z-index: 99999; display: flex; flex-direction: column; }
+body.cn-open #cn-menu { transform: translateX(0); }
+body.cn-open #cn-backdrop { opacity: 1; visibility: visible; }
+body.cn-open { overflow: hidden; }
+#cn-menu .cn-close { text-align: right; padding: 18px 22px; font-size: 26px; color: #161922; text-decoration: none; border-bottom: 1px solid #f1f5f9; }
+#cn-menu nav { overflow-y: auto; padding: 10px 0; }
+#cn-menu nav a.nav-main { display: block; padding: 14px 24px; font-size: 16px; font-weight: 600; color: #161922; border-bottom: 1px solid #f8fafc; text-decoration: none; }
+#cn-menu nav a.nav-main:hover { color: #e62f43; }
+.m-sub { background: #f8fafc; padding: 6px 0 10px; border-left: 3px solid #e62f43; margin: 4px 20px 10px 24px; border-radius: 4px; }
+.m-sub a { display: block; padding: 8px 14px; font-size: 13px; color: #475569; text-decoration: none; font-weight: 500; }
+.m-sub a:hover { color: #e62f43; }
+
+@media (max-width: 1050px) {
+  .platforms-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-container { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 960px) {
+  .main-nav, .header-cta .btn-secondary { display: none; }
+  .mobile-toggle { display: block; }
+  .hero-hiw h1 { font-size: 32px; }
+  .step-card { grid-template-columns: 1fr; gap: 16px; padding: 24px; }
+  .step-badge { width: 50px; height: 50px; font-size: 22px; border-radius: 12px; }
+}
+@media (max-width: 640px) {
+  .platforms-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-container { grid-template-columns: 1fr; }
+}
+@keyframes cdFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<header id="Top_bar">
+  <div class="container">
+    <a href="index.html" class="logo-brand"><img src="images/accountant4.svg" alt="BeAccountant 4 - Betheme" height="38" style="height:38px;width:auto;display:block;" /></a>
+    
+    <ul class="main-nav">
+      <li class="has-dropdown">
+        <a href="features.html">Features <span class="dropdown-chevron"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="features.html#plan-advertising">Plan Advertising (AI Ad Planner)</a></li>
+          <li><a href="features.html#research-ads">Research Ads</a></li>
+          <li><a href="features.html#create-creatives">Create Creatives</a></li>
+          <li><a href="features.html#launch-campaigns">Launch Campaigns</a></li>
+          <li><a href="features.html#reach-engage">Reach &amp; Engage</a></li>
+          <li><a href="features.html#analyze-improve">Analyze &amp; Improve</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="use-cases.html">Use Cases <span class="dropdown-chevron"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="use-cases.html#education">Education</a></li>
+          <li><a href="use-cases.html#marketers">Marketers</a></li>
+          <li><a href="use-cases.html#d2c">For D2C</a></li>
+          <li><a href="use-cases.html#real-estate">Real Estate</a></li>
+        </ul>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li class="active"><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="header-cta">
+      <a href="contact.html" class="btn-primary">Contact us</a>
+      <button class="mobile-toggle" aria-label="Open menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-hiw">
+  <div class="badge">Get Started in Minutes</div>
+  <h1>How to Set Up and Use digiAd AI Platform</h1>
+  <p class="subtitle">Follow our comprehensive guide to set up your brand, connect ad accounts, and create powerful AI-driven campaigns that deliver exceptional results.</p>
+  <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+    <a href="#setup-guide" class="btn-primary">View Setup Guide</a>
+    <a href="#creating-creatives" class="btn-secondary" style="background:rgba(255,255,255,0.12); color:#fff; border-color:rgba(255,255,255,0.2);">Creative Generation Steps</a>
+  </div>
+</section>
+
+<div class="guide-container">
+
+  <!-- Step-by-Step Setup Guide & Connected Channels -->
+  <div class="section-header" id="setup-guide">
+    <span class="section-tag">Step-by-Step Setup Guide</span>
+    <h2>Connect Your Advertising Ecosystem</h2>
+    <p>Follow these steps to get your digiAd AI platform fully configured and running across all channels.</p>
+  </div>
+
+  <div class="platforms-grid">
+    <!-- Ad Creative -->
+    <div class="platform-card">
+      <div class="p-icon accent">🎨</div>
+      <p class="p-name">Ad Creative</p>
+      <span class="p-status">Configured</span>
+    </div>
+
+    <!-- Campaign & Ads -->
+    <div class="platform-card">
+      <div class="p-icon accent">🚀</div>
+      <p class="p-name">Campaign &amp; Ads</p>
+      <span class="p-status">Auto-Sync</span>
+    </div>
+
+    <!-- Google Ads -->
+    <div class="platform-card">
+      <div class="p-icon">G</div>
+      <p class="p-name">Google Ads</p>
+      <span class="p-status">OAuth 2.0</span>
+    </div>
+
+    <!-- Facebook Ads -->
+    <div class="platform-card">
+      <div class="p-icon" style="color:#1877f2;">f</div>
+      <p class="p-name">Facebook Ads</p>
+      <span class="p-status">Meta CAPI</span>
+    </div>
+
+    <!-- Instagram Ads -->
+    <div class="platform-card">
+      <div class="p-icon" style="color:#e4405f;">📷</div>
+      <p class="p-name">Instagram Ads</p>
+      <span class="p-status">Reels &amp; Feed</span>
+    </div>
+
+    <!-- X (Twitter) Ads -->
+    <div class="platform-card">
+      <div class="p-icon">𝕏</div>
+      <p class="p-name">X (Twitter) Ads</p>
+      <span class="p-status">Connected</span>
+    </div>
+
+    <!-- Snapchat -->
+    <div class="platform-card">
+      <div class="p-icon" style="color:#eab308;">👻</div>
+      <p class="p-name">Snapchat</p>
+      <span class="p-status">Snap Pixel</span>
+    </div>
+
+    <!-- TikTok Ads -->
+    <div class="platform-card">
+      <div class="p-icon">🎵</div>
+      <p class="p-name">TikTok Ads</p>
+      <span class="p-status">TikTok API</span>
+    </div>
+
+    <!-- Twilio -->
+    <div class="platform-card">
+      <div class="p-icon" style="color:#f43f5e;">💬</div>
+      <p class="p-name">Twilio</p>
+      <span class="p-status">SMS &amp; WhatsApp</span>
+    </div>
+
+    <!-- Virtual Influencer -->
+    <div class="platform-card">
+      <div class="p-icon accent">🤖</div>
+      <p class="p-name">Virtual Influencer</p>
+      <span class="p-status">AI Avatars</span>
+    </div>
+  </div>
+
+  <!-- Creating Ad Creatives Step-by-Step Flow -->
+  <div class="section-header" id="creating-creatives">
+    <span class="section-tag">AI Workflow</span>
+    <h2>Creating Ad Creatives</h2>
+    <p>Follow these steps to create powerful ad creatives with AI.</p>
+  </div>
+
+  <div class="steps-timeline">
+
+    <!-- Step 1 -->
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div class="step-body">
+        <h3>Go to Ad Creatives</h3>
+        <ul class="step-points">
+          <li>Log in to your digiAd AI account and open the Ad Creatives section.</li>
+          <li>Click Create New Ad Creative button to begin.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div class="step-body">
+        <h3>Name Your Creative</h3>
+        <ul class="step-points">
+          <li>Give your ad a unique name to easily identify it later.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-card">
+      <div class="step-badge">3</div>
+      <div class="step-body">
+        <h3>Select Platform</h3>
+        <ul class="step-points">
+          <li>Choose the platforms you want to create ads for &mdash; Facebook, Google, Instagram, Snapchat, TikTok, X, or YouTube.</li>
+          <li>Select the relevant Ad Type for each platform.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step-card">
+      <div class="step-badge">4</div>
+      <div class="step-body">
+        <h3>Add Product or Service Details</h3>
+        <ul class="step-points">
+          <li>Paste the product or service URL and let AI auto-fill the details for you.</li>
+          <li>Or, enter the information manually if you prefer.</li>
+          <li>Click Fetch Details, then proceed by clicking Next.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="step-card">
+      <div class="step-badge">5</div>
+      <div class="step-body">
+        <h3>Generate Ad Copies</h3>
+        <ul class="step-points">
+          <li>Sit back and let digiAd AI creates multiple ad copies tailored to your brand and audience &mdash; in minutes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="step-card">
+      <div class="step-badge">6</div>
+      <div class="step-body">
+        <h3>Choose a Call to Action</h3>
+        <ul class="step-points">
+          <li>Select the most suitable Call to Action from the dropdown.</li>
+          <li>Click Save to store your creative for later, or Save &amp; Launch to publish your ad right away.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Ready to Elevate Your Advertising Banner -->
+  <div class="ready-banner">
+    <h2>Ready to Elevate Your Advertising?</h2>
+    <p class="main-p">Join thousands of marketers already transforming their campaigns with digiAd AI.</p>
+    <p class="tagline">Experience unparalleled efficiency and results.</p>
+    <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+      <a href="pricing.html" class="btn-primary" style="font-size:16px; padding:16px 36px;">Start Free Trial</a>
+      <a href="contact.html" class="btn-secondary" style="font-size:16px; padding:16px 36px; background:#293042; color:#fff; border-color:transparent;">Contact Sales</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer with exact branding requested -->
+<footer class="unified-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h4>Codellio <span style="color:#e62f43;">digiAd AI</span></h4>
+      <p>AI marketing platform helping D2C Brands &amp; Agencies research competitors, create sales-ready content, launch ads across Meta, Google, X &amp; more, and track what works.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Product</h5>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="use-cases.html">Use Cases</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Contact Us</h5>
+      <ul class="footer-links">
+        <li><a href="mailto:support@digiad.ai" class="footer-contact-link">support@digiad.ai</a></li>
+        <li style="margin-top:14px;"><a href="contact.html">Need Help?</a></li>
+        <li><a href="contact.html">Book a Demo</a></li>
+        <li><a href="contact.html">Talk to Sales</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Legal Policy</h5>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Data Security</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div>&copy; 2025 - 2026 Xalt Analytics Private Limited. All rights reserved.</div>
+    <div>digiAd AI &mdash; AI-Powered Marketing Platform</div>
+  </div>
+</footer>
+
+<!-- Mobile Menu Drawer -->
+<div id="cn-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#" class="cn-close" aria-label="Close menu">&times;</a>
+  <nav>
+    <a href="index.html" class="nav-main">Home</a>
+    <div class="nav-group">
+      <a href="features.html" class="nav-main">Features &#9662;</a>
+      <div class="m-sub">
+        <a href="features.html#plan-advertising">Plan Advertising (AI Ad Planner)</a>
+        <a href="features.html#research-ads">Research Ads</a>
+        <a href="features.html#create-creatives">Create Creatives</a>
+        <a href="features.html#launch-campaigns">Launch Campaigns</a>
+        <a href="features.html#reach-engage">Reach &amp; Engage</a>
+        <a href="features.html#analyze-improve">Analyze &amp; Improve</a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <a href="use-cases.html" class="nav-main">Use Cases &#9662;</a>
+      <div class="m-sub">
+        <a href="use-cases.html#education">Education</a>
+        <a href="use-cases.html#marketers">Marketers</a>
+        <a href="use-cases.html#d2c">For D2C</a>
+        <a href="use-cases.html#real-estate">Real Estate</a>
+      </div>
+    </div>
+    <a href="pricing.html" class="nav-main">Pricing</a>
+    <a href="how-it-works.html" class="nav-main" style="color:#e62f43;">How It Works</a>
+    <a href="tutorials.html" class="nav-main">Tutorials</a>
+    <a href="contact.html" class="nav-main">Contact</a>
+  </nav>
+</div>
+<div id="cn-backdrop"></div>
+
+<script>
+(function(){
+  var b=document.body;
+  function open(e){if(e)e.preventDefault();b.classList.add('cn-open');}
+  function close(e){if(e)e.preventDefault();b.classList.remove('cn-open');}
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(!t||!t.closest)return;
+    if(t.closest('.mobile-toggle')){open(e);return;}
+    if(t.closest('#cn-menu .cn-close')){close(e);return;}
+    if(t.id==='cn-backdrop'){close(e);return;}
+  });
+})();
+</script>
+</body>
+</html>

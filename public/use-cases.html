@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Use Cases &#8211; Codellio AI Advertising</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="Discover tailored AI advertising use cases: Education, Marketers, For D2C Brands, and Real Estate Lead Generation." />
+
+<link rel='stylesheet' href='https://themes.muffingroup.com/be/accountant4/wp-content/themes/download-THmqEA.xcf/css/be.css?ver=28.3.1' media='all' />
+<link rel='stylesheet' href='https://themes.muffingroup.com/be/accountant4/wp-content/themes/download-THmqEA.xcf/fonts/fontawesome/fontawesome.css?ver=28.3.1' media='all' />
+<link rel='stylesheet' href='https://themes.muffingroup.com/be/accountant4/wp-content/themes/download-THmqEA.xcf/css/responsive.css?ver=28.3.1' media='all' />
+
+<style>
+body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #596579; margin: 0; background: #fff; }
+h1,h2,h3,h4,h5 { font-family: 'DM Sans', sans-serif; color: #161922; font-weight: 700; margin-top: 0; }
+a { color: #e62f43; text-decoration: none; }
+a:hover { color: #c81d30; }
+
+#Top_bar { background: #fff; border-bottom: 1px solid #edf2f7; position: sticky; top: 0; z-index: 1000; }
+#Top_bar .container { max-width: 1240px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+.logo-brand { font-size: 24px; font-weight: 800; color: #161922; display: flex; align-items: center; text-decoration: none; }
+.logo-brand span { color: #e62f43; }
+
+.main-nav { display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; }
+.main-nav > li { position: relative; }
+.main-nav > li > a { font-size: 15px; font-weight: 600; color: #333d4b; display: inline-flex; align-items: center; gap: 5px; padding: 8px 0; text-decoration: none; transition: color .2s; }
+.main-nav > li > a:hover, .main-nav > li.active > a { color: #e62f43; }
+
+.dropdown-chevron { display: inline-block; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); margin-top: -3px; margin-left: 4px; transition: transform 0.2s ease; }
+.main-nav > li.has-dropdown:hover .dropdown-chevron { transform: rotate(-135deg); margin-top: 3px; }
+
+.dropdown-menu { display: none; position: absolute; top: 100%; left: -10px; min-width: 280px; background: #fff; box-shadow: 0 18px 40px rgba(0,0,0,0.12); border: 1px solid #edf0f5; border-radius: 12px; padding: 10px 0; list-style: none; margin: 8px 0 0 0; z-index: 10000; animation: cdFade .2s ease forwards; }
+.main-nav > li.has-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu li a { display: block; padding: 11px 22px; font-size: 14px; font-weight: 500; color: #222938; text-decoration: none; transition: background .15s, color .15s, padding-left .15s; }
+.dropdown-menu li a:hover { background: #fff1f2; color: #e62f43; padding-left: 26px; }
+
+.header-cta { display: flex; align-items: center; gap: 14px; }
+.btn-primary { background: #e62f43; color: #fff; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: background .2s, transform .2s; }
+.btn-primary:hover { background: #d01c30; color: #fff; transform: translateY(-1px); }
+.btn-secondary { background: #edf2f7; color: #161922; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; transition: background .2s; }
+.btn-secondary:hover { background: #e2e8f0; color: #161922; }
+
+/* Subheader Hero */
+.hero-cases { background: linear-gradient(135deg, #161922 0%, #1f2738 100%); color: #fff; padding: 80px 24px 60px; text-align: center; }
+.hero-cases .badge { display: inline-block; background: rgba(230, 47, 67, 0.18); color: #ff6b7d; border: 1px solid rgba(230, 47, 67, 0.35); padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+.hero-cases h1 { color: #fff; font-size: 48px; line-height: 1.15; max-width: 860px; margin: 0 auto 20px; }
+.hero-cases p { color: #cbd5e1; font-size: 18px; max-width: 680px; margin: 0 auto 36px; line-height: 1.6; }
+
+/* Jump Navigation Pills */
+.feature-pills-bar { background: #fff; border-bottom: 1px solid #edf2f7; padding: 16px 24px; position: sticky; top: 69px; z-index: 900; }
+.feature-pills { display: flex; gap: 10px; max-width: 1240px; margin: 0 auto; overflow-x: auto; padding-bottom: 4px; }
+.pill-btn { white-space: nowrap; padding: 8px 18px; background: #f1f5f9; color: #475569; border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; transition: all .2s; }
+.pill-btn:hover { background: #e62f43; color: #fff; }
+
+/* Case Sections */
+.cases-container { max-width: 1240px; margin: 0 auto; padding: 60px 24px; }
+.case-block { padding: 70px 0; border-bottom: 1px solid #f1f5f9; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; scroll-margin-top: 140px; }
+.case-block.reversed { direction: rtl; }
+.case-block.reversed > * { direction: ltr; }
+
+.c-badge { display: inline-block; color: #e62f43; font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; }
+.c-title { font-size: 34px; line-height: 1.25; margin-bottom: 16px; color: #161922; }
+.c-desc { font-size: 16px; line-height: 1.7; color: #64748b; margin-bottom: 28px; }
+
+.c-checklist { list-style: none; padding: 0; margin: 0 0 32px 0; }
+.c-checklist li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; font-size: 15px; color: #334155; line-height: 1.5; }
+.c-check-icon { width: 22px; height: 22px; border-radius: 50%; background: #fee2e2; color: #e62f43; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; font-weight: bold; }
+
+.c-card-preview { background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%); border: 1px solid #e2e8f0; border-radius: 20px; padding: 36px; box-shadow: 0 16px 36px rgba(0,0,0,0.04); }
+.c-metric-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.c-metric-card { background: #fff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center; }
+.c-metric-card .num { font-size: 32px; font-weight: 800; color: #e62f43; margin-bottom: 4px; }
+.c-metric-card .label { font-size: 12px; color: #64748b; font-weight: 600; text-transform: uppercase; }
+
+.testimonial-quote { background: #fff; border-left: 4px solid #e62f43; border-radius: 0 12px 12px 0; padding: 18px 20px; font-style: italic; color: #334155; font-size: 14px; line-height: 1.6; margin-top: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+.testimonial-author { font-style: normal; font-weight: 700; color: #161922; margin-top: 8px; font-size: 13px; }
+
+/* Bottom CTA */
+.bottom-cta { background: #161922; color: #fff; border-radius: 24px; padding: 70px 40px; text-align: center; margin: 40px auto 80px; max-width: 1200px; }
+.bottom-cta h2 { color: #fff; font-size: 38px; margin-bottom: 16px; }
+.bottom-cta p { color: #cbd5e1; font-size: 17px; max-width: 600px; margin: 0 auto 32px; }
+
+/* Footer */
+footer { background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 60px 24px 30px; }
+.footer-container { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; color: #64748b; margin-top: 14px; max-width: 320px; }
+.footer-col h5 { font-size: 15px; margin-bottom: 18px; color: #161922; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: #64748b; font-size: 14px; text-decoration: none; }
+.footer-links a:hover { color: #e62f43; }
+.footer-bottom { max-width: 1240px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid #e2e8f0; font-size: 13px; color: #94a3b8; display: flex; justify-content: space-between; }
+
+/* Mobile Menu */
+.mobile-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: #161922; }
+#cn-backdrop { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.5); opacity: 0; visibility: hidden; transition: opacity .25s ease; z-index: 99998; }
+#cn-menu { position: fixed; top: 0; right: 0; bottom: 0; width: 300px; max-width: 85%; background: #fff; box-shadow: -4px 0 24px rgba(0,0,0,.15); transform: translateX(105%); transition: transform .25s ease; z-index: 99999; display: flex; flex-direction: column; }
+body.cn-open #cn-menu { transform: translateX(0); }
+body.cn-open #cn-backdrop { opacity: 1; visibility: visible; }
+body.cn-open { overflow: hidden; }
+#cn-menu .cn-close { text-align: right; padding: 18px 22px; font-size: 26px; color: #161922; text-decoration: none; border-bottom: 1px solid #f1f5f9; }
+#cn-menu nav { overflow-y: auto; padding: 10px 0; }
+#cn-menu nav a.nav-main { display: block; padding: 14px 24px; font-size: 16px; font-weight: 600; color: #161922; border-bottom: 1px solid #f8fafc; text-decoration: none; }
+#cn-menu nav a.nav-main:hover { color: #e62f43; }
+.m-sub { background: #f8fafc; padding: 6px 0 10px; border-left: 3px solid #e62f43; margin: 4px 20px 10px 24px; border-radius: 4px; }
+.m-sub a { display: block; padding: 8px 14px; font-size: 13px; color: #475569; text-decoration: none; font-weight: 500; }
+.m-sub a:hover { color: #e62f43; }
+
+@media (max-width: 960px) {
+  .main-nav, .header-cta .btn-secondary { display: none; }
+  .mobile-toggle { display: block; }
+  .case-block { grid-template-columns: 1fr; gap: 40px; }
+  .case-block.reversed { direction: ltr; }
+  .footer-container { grid-template-columns: 1fr 1fr; }
+  .hero-cases h1 { font-size: 34px; }
+  .c-title { font-size: 26px; }
+}
+@media (max-width: 600px) {
+  .footer-container { grid-template-columns: 1fr; }
+}
+@keyframes cdFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<header id="Top_bar">
+  <div class="container">
+    <a href="index.html" class="logo-brand"><img src="images/accountant4.svg" alt="BeAccountant 4 - Betheme" height="38" style="height:38px;width:auto;display:block;" /></a>
+    
+    <ul class="main-nav">
+      <li class="has-dropdown">
+        <a href="features.html">Features <span class="dropdown-chevron"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="features.html#plan-advertising">Plan Advertising (AI Ad Planner)</a></li>
+          <li><a href="features.html#research-ads">Research Ads</a></li>
+          <li><a href="features.html#create-creatives">Create Creatives</a></li>
+          <li><a href="features.html#launch-campaigns">Launch Campaigns</a></li>
+          <li><a href="features.html#reach-engage">Reach &amp; Engage</a></li>
+          <li><a href="features.html#analyze-improve">Analyze &amp; Improve</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown active">
+        <a href="use-cases.html">Use Cases <span class="dropdown-chevron"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="use-cases.html#education">Education</a></li>
+          <li><a href="use-cases.html#marketers">Marketers</a></li>
+          <li><a href="use-cases.html#d2c">For D2C</a></li>
+          <li><a href="use-cases.html#real-estate">Real Estate</a></li>
+        </ul>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="header-cta">
+      <a href="contact.html" class="btn-primary">Contact us</a>
+      <button class="mobile-toggle" aria-label="Open menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<div class="feature-pills-bar">
+  <div class="feature-pills">
+    <a href="#education" class="pill-btn">Education</a>
+    <a href="#marketers" class="pill-btn">Marketers</a>
+    <a href="#d2c" class="pill-btn">For D2C</a>
+    <a href="#real-estate" class="pill-btn">Real Estate</a>
+  </div>
+</div>
+
+<section class="hero-cases">
+  <div class="badge">Industry Specific Solutions</div>
+  <h1>Engineered for High-Growth Industries</h1>
+  <p>Learn how EdTech institutes, marketing teams, e-commerce retailers, and real estate professionals achieve predictable conversion with Codellio.</p>
+  <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+    <a href="#education" class="btn-primary">Explore Use Cases</a>
+    <a href="pricing.html" class="btn-secondary" style="background:rgba(255,255,255,0.12); color:#fff;">Compare Pricing</a>
+  </div>
+</section>
+
+<div class="cases-container">
+
+  <!-- 1. Education -->
+  <section id="education" class="case-block">
+    <div class="case-text">
+      <span class="c-badge">EdTech &amp; Learning</span>
+      <h2 class="c-title">Education &amp; Academic Enrollments</h2>
+      <p class="c-desc">Student recruitment cycles require high trust, multi-touch education nurturing, and precise regional targeting. Codellio builds automated student intake funnels that capture prospective student queries across search intent and convert them via social video proof.</p>
+      <ul class="c-checklist">
+        <li><span class="c-check-icon">✓</span> <span><strong>Course &amp; Degree Lead Capture:</strong> Automatically matches students looking for bootcamps, MBA programs, and online diplomas.</span></li>
+        <li><span class="c-check-icon">✓</span> <span><strong>Webinar &amp; Demo Class Sequencing:</strong> Automated reminders and retargeting ads that double live attendee attendance.</span></li>
+        <li><span class="c-check-icon">✓</span> <span><strong>Localized Campus Radius Ads:</strong> Target high schools and college feeder zones with localized tuition grant messaging.</span></li>
+      </ul>
+      <a href="contact.html" class="btn-primary">Get Education Playbook</a>
+    </div>
+    <div class="c-card-preview">
+      <div class="c-metric-row">
+        <div class="c-metric-card">
+          <div class="num">+312%</div>
+          <div class="label">Course Enrollments</div>
+        </div>
+        <div class="c-metric-card">
+          <div class="num">-44%</div>
+          <div class="label">CPA Reduction</div>
+        </div>
+      </div>
+      <div class="testimonial-quote">
+        "Codellio helped us enroll 1,400 students across our tech cohorts in Q3 while shaving 44% off our cost per acquisition. The AI Ad Planner anticipated seasonal spikes perfectly."
+        <div class="testimonial-author">&mdash; Elena Rostova, VP of Growth at SkillSprint Academy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Marketers -->
+  <section id="marketers" class="case-block reversed">
+    <div class="case-text">
+      <span class="c-badge">Agencies &amp; Media Buyers</span>
+      <h2 class="c-title">Marketers &amp; Growth Agencies</h2>
+      <p class="c-desc">Managing multiple client portfolios shouldn't mean drowning in spreadsheets and manual A/B split setups. Codellio empowers digital marketing teams to scale 50+ ad accounts with unified campaign templates and automatic fatigue mitigation.</p>
+      <ul class="c-checklist">
+        <li><span class="c-check-icon">✓</span> <span><strong>Cross-Account Intelligence:</strong> Learn which angles and hooks work best in each vertical and port them instantly.</span></li>
+        <li><span class="c-check-icon">✓</span> <span><strong>White-Label Client Dashboards:</strong> Automated weekly reports showing transparent ROAS and autonomous optimization savings.</span></li>
+        <li><span class="c-check-icon">✓</span> <span><strong>10x Production Speed:</strong> Generate hundreds of ad copy and visual variations in minutes, not weeks.</span></li>
+      </ul>
+      <a href="pricing.html" class="btn-primary">View Agency Plans</a>
+    </div>
+    <div class="c-card-preview">
+      <div class="c-metric-row">
+        <div class="c-metric-card">
+          <div class="num">18 hrs</div>
+          <div class="label">Saved Weekly / Buyer</div>
+        </div>
+        <div class="c-metric-card">
+          <div class="num">4.8x</div>
+          <div class="label">Avg Client ROAS</div>
+        </div>
+      </div>
+      <div class="testimonial-quote">
+        "Our agency doubled our client roster without hiring new media buyers. Codellio handles the mundane creative rendering and bidding shifts while we focus on high-level brand strategy."
+        <div class="testimonial-author">&mdash; Marcus Vance, Co-Founder at Apex Media Partners</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. For D2C -->
+  <section id="d2c" class="case-block">
+    <div class="case-text">
+      <span class="c-badge">E-Commerce &amp; Brands</span>
+      <h2 class="c-title">For D2C Brands</h2>
+      <p class="c-desc">Rising CPMs on Meta and TikTok can crush direct-to-consumer profit margins. Codellio equips D2C merchants with automated product catalog ad generation, high-retention UGC hooks, and flash promotion pacing that maximizes average order value.</p>
+      <ul class="c-checklist">
+        <li><span class="c-check-icon">✓</span> <span><strong>Shopify &amp; Product Feed Integration:</strong> Pull inventory feeds and instantly turn bestselling SKUs into dynamic high-converting ads.</span></li>
+        <li><span class="c-check-icon">✓</span> <span><strong>Creative Fatigue Shield:</strong> System alerts and automatically replaces ads before your return on ad spend drops.</span></li>
+        <li><span class="c-check-icon">✓</span> <span><strong>Cart Abandonment &amp; Cross-Sell:</strong> Hyper-relevant social remarketing ads showing the exact product viewed with customer reviews.</span></li>
+      </ul>
+      <a href="pricing.html" class="btn-primary">Boost D2C Sales</a>
+    </div>
+    <div class="c-card-preview">
+      <div class="c-metric-row">
+        <div class="c-metric-card">
+          <div class="num">5.4x</div>
+          <div class="label">Blended ROAS</div>
+        </div>
+        <div class="c-metric-card">
+          <div class="num">+68%</div>
+          <div class="label">Repeat Purchases</div>
+        </div>
+      </div>
+      <div class="testimonial-quote">
+        "During our Black Friday launch, Codellio generated 80 dynamic creative variations in one morning and automatically shifted spend into our top 3 converting bundles. Unbeatable."
+        <div class="testimonial-author">&mdash; Sarah Chen, Founder of Lumina Skincare</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Real Estate -->
+  <section id="real-estate" class="case-block reversed">
+    <div class="case-text">
+      <span class="c-badge">Realtors &amp; Developers</span>
+      <h2 class="c-title">Real Estate Lead Generation</h2>
+      <p class="c-desc">Real estate leads must be verified, geographically precise, and pre-screened for purchasing intent. Codellio creates targeted property showcase campaigns with instant lead forms that pipe directly into your CRM or agent inbox.</p>
+      <ul class="c-checklist">
+        <li><span class="c-check-icon">✓</span> <span><strong>Hyper-Local Radius Geofencing:</strong> Target buyers within specific zip codes, income brackets, and commuter corridors.</span></li>
+        <li><span class="c-check-icon">✓</span> <span><strong>Virtual Tour &amp; Open House Funnels:</strong> Collect attendee RSVPs and automated SMS reminders for weekend walkthroughs.</span></li>
+        <li><span class="c-check-icon">✓</span> <span><strong>Pre-Qualified Homebuyer Questionnaires:</strong> Screen by financing status, move-in horizon, and budget parameters.</span></li>
+      </ul>
+      <a href="contact.html" class="btn-primary">Generate Property Leads</a>
+    </div>
+    <div class="c-card-preview">
+      <div class="c-metric-row">
+        <div class="c-metric-card">
+          <div class="num">$14.20</div>
+          <div class="label">Cost Per Buyer Lead</div>
+        </div>
+        <div class="c-metric-card">
+          <div class="num">3.4x</div>
+          <div class="label">Walkthrough Bookings</div>
+        </div>
+      </div>
+      <div class="testimonial-quote">
+        "We sold out all 32 units in our new luxury condominium development 2 months ahead of schedule. The hyper-local geofenced ads generated serious, pre-qualified buyers every single week."
+        <div class="testimonial-author">&mdash; David Sterling, Managing Director at Sterling Heights Properties</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="bottom-cta">
+  <h2>Experience Tailored Performance For Your Industry</h2>
+  <p>Get started today with custom industry templates, verified playbooks, and autonomous ad optimization.</p>
+  <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+    <a href="pricing.html" class="btn-primary" style="font-size:16px; padding:16px 36px;">Start 14-Day Free Trial</a>
+    <a href="tutorials.html" class="btn-secondary" style="font-size:16px; padding:16px 36px; background:#293042; color:#fff;">Browse Tutorials</a>
+  </div>
+</div>
+
+<footer class="unified-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h4>Codellio <span style="color:#e62f43;">digiAd AI</span></h4>
+      <p>AI marketing platform helping D2C Brands &amp; Agencies research competitors, create sales-ready content, launch ads across Meta, Google, X &amp; more, and track what works.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Product</h5>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="use-cases.html">Use Cases</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Contact Us</h5>
+      <ul class="footer-links">
+        <li><a href="mailto:support@digiad.ai" class="footer-contact-link">support@digiad.ai</a></li>
+        <li style="margin-top:14px;"><a href="contact.html">Need Help?</a></li>
+        <li><a href="contact.html">Book a Demo</a></li>
+        <li><a href="contact.html">Talk to Sales</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Legal Policy</h5>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Data Security</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div>&copy; 2025 - 2026 Xalt Analytics Private Limited. All rights reserved.</div>
+    <div>digiAd AI &mdash; AI-Powered Marketing Platform</div>
+  </div>
+</footer>
+
+<!-- Mobile Menu Drawer -->
+<div id="cn-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#" class="cn-close" aria-label="Close menu">&times;</a>
+  <nav>
+    <a href="index.html" class="nav-main">Home</a>
+    <div class="nav-group">
+      <a href="features.html" class="nav-main">Features &#9662;</a>
+      <div class="m-sub">
+        <a href="features.html#plan-advertising">Plan Advertising (AI Ad Planner)</a>
+        <a href="features.html#research-ads">Research Ads</a>
+        <a href="features.html#create-creatives">Create Creatives</a>
+        <a href="features.html#launch-campaigns">Launch Campaigns</a>
+        <a href="features.html#reach-engage">Reach &amp; Engage</a>
+        <a href="features.html#analyze-improve">Analyze &amp; Improve</a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <a href="use-cases.html" class="nav-main" style="color:#e62f43;">Use Cases &#9662;</a>
+      <div class="m-sub">
+        <a href="use-cases.html#education">Education</a>
+        <a href="use-cases.html#marketers">Marketers</a>
+        <a href="use-cases.html#d2c">For D2C</a>
+        <a href="use-cases.html#real-estate">Real Estate</a>
+      </div>
+    </div>
+    <a href="pricing.html" class="nav-main">Pricing</a>
+    <a href="how-it-works.html" class="nav-main">How It Works</a>
+    <a href="tutorials.html" class="nav-main">Tutorials</a>
+    <a href="contact.html" class="nav-main">Contact</a>
+  </nav>
+</div>
+<div id="cn-backdrop"></div>
+
+<script>
+(function(){
+  var b=document.body;
+  function open(e){if(e)e.preventDefault();b.classList.add('cn-open');}
+  function close(e){if(e)e.preventDefault();b.classList.remove('cn-open');}
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(!t||!t.closest)return;
+    if(t.closest('.mobile-toggle')){open(e);return;}
+    if(t.closest('#cn-menu .cn-close')){close(e);return;}
+    if(t.id==='cn-backdrop'){close(e);return;}
+  });
+})();
+</script>
+</body>
+</html>

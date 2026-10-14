@@ -1,0 +1,8 @@
+{
+  "name": "Codellio",
+  "description": "Autonomous AI advertising platform featuring AI Ad Planner, competitor ad research, creative generation, multi-channel launch, and real-time optimization.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "permissions": []
+}
