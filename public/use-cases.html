@@ -227,6 +227,100 @@ body.cn-open { overflow: hidden; }
   .edu-msg-grid { grid-template-columns:1fr; }
 }
 </style>
+<style id="uc-landing-style">
+/* ===== Use Cases: Marketers / D2C landing sections ===== */
+.uc-hero { background: linear-gradient(135deg,#0e57e8 0%,#0a3fb0 100%); color:#fff; padding:76px 24px 0; text-align:center; scroll-margin-top:110px; }
+.uc-badge { display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.4); color:#fff; padding:6px 16px; border-radius:50px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:20px; }
+.uc-hero h2 { color:#fff; font-size:42px; line-height:1.15; max-width:900px; margin:0 auto 18px; }
+.uc-hero .uc-sub { color:#dbe6ff; font-size:17px; line-height:1.6; max-width:780px; margin:0 auto 16px; }
+.uc-hero .uc-sub strong { color:#fff; }
+.uc-meta { color:#bcd2ff; font-size:14px; font-weight:600; margin-bottom:24px; }
+.uc-cta { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-bottom:34px; }
+.uc-btn-light { background:rgba(255,255,255,.16); color:#fff; }
+.uc-btn-light:hover { background:rgba(255,255,255,.26); color:#fff; }
+.uc-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; max-width:1000px; margin:0 auto; }
+.uc-stat { background:#fff; border-radius:16px 16px 0 0; padding:22px 14px; box-shadow:0 -6px 24px rgba(0,0,0,.06); }
+.uc-stat .num { font-size:30px; font-weight:800; color:#0e57e8; }
+.uc-stat .label { font-size:11px; color:#64748b; text-transform:uppercase; letter-spacing:.5px; font-weight:700; margin-top:4px; }
+
+.uc-wrap { max-width:1240px; margin:0 auto; padding:0 24px; }
+.uc-sec { padding:64px 0; }
+.uc-sec.alt { background:#f8fafc; }
+.uc-sec.alt .uc-wrap { padding-top:0; }
+.uc-eyebrow { display:inline-block; color:#0e57e8; font-weight:700; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:12px; }
+.uc-h { font-size:32px; line-height:1.25; color:#161922; margin:0 0 14px; }
+.uc-lead { font-size:16px; line-height:1.7; color:#64748b; max-width:800px; margin:0 0 34px; }
+.uc-center { text-align:center; }
+.uc-center .uc-lead { margin-left:auto; margin-right:auto; }
+
+.uc-compare { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.uc-cmp { background:#fff; border:1px solid #e2e8f0; border-radius:18px; padding:26px; box-shadow:0 10px 26px rgba(0,0,0,.04); }
+.uc-cmp.bad { border-top:4px solid #f97362; }
+.uc-cmp.good { border-top:4px solid #0e57e8; }
+.uc-cmp h4 { font-size:18px; color:#161922; margin:0 0 16px; }
+.uc-cmp ul { list-style:none; padding:0; margin:0; }
+.uc-cmp li { position:relative; padding-left:26px; margin-bottom:12px; font-size:14.5px; color:#475569; line-height:1.5; }
+.uc-cmp li:last-child { margin-bottom:0; }
+.uc-cmp.bad li::before { content:"\00d7"; position:absolute; left:0; top:-1px; color:#f97362; font-weight:800; font-size:17px; }
+.uc-cmp.good li::before { content:"\2713"; position:absolute; left:0; color:#0e57e8; font-weight:800; }
+
+.uc-grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.uc-feat { background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:26px; box-shadow:0 10px 26px rgba(0,0,0,.04); }
+.uc-tag { display:inline-block; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:#0e57e8; background:#eef4fe; border-radius:6px; padding:4px 10px; margin-bottom:12px; }
+.uc-feat h4 { font-size:18px; color:#161922; margin:0 0 8px; }
+.uc-feat .uc-fsub { font-weight:700; color:#161922; font-size:14.5px; margin:0 0 8px; }
+.uc-feat p { font-size:14px; line-height:1.6; color:#64748b; margin:0; }
+
+.uc-calc { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:30px; max-width:760px; margin:0 auto; box-shadow:0 14px 40px rgba(0,0,0,.06); }
+.uc-calc label { font-size:14px; font-weight:700; color:#161922; }
+.uc-calc input[type=range] { width:100%; margin:14px 0 20px; accent-color:#0e57e8; }
+.uc-calc-out { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.uc-calc-card { background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:20px; text-align:center; }
+.uc-calc-card .num { font-size:28px; font-weight:800; color:#0e57e8; }
+.uc-calc-card .label { font-size:12px; color:#64748b; font-weight:600; text-transform:uppercase; margin-top:4px; }
+.uc-calc-note { font-size:13px; color:#94a3b8; text-align:center; margin-top:16px; }
+.uc-calc .uc-center { margin-top:22px; }
+
+.uc-perks { background:#0f1b3d; color:#fff; border-radius:20px; padding:34px 30px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+.uc-perks h3 { color:#fff; font-size:22px; margin:0 0 6px; }
+.uc-perks p { color:#b9c6e6; font-size:14px; margin:0; max-width:520px; }
+.uc-count { display:flex; gap:10px; }
+.uc-count .cell { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:10px 14px; text-align:center; min-width:64px; }
+.uc-count .cell .n { font-size:22px; font-weight:800; color:#fff; }
+.uc-count .cell .l { font-size:10px; color:#b9c6e6; text-transform:uppercase; letter-spacing:.5px; }
+
+.uc-quotes { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.uc-quote { background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:24px; box-shadow:0 10px 26px rgba(0,0,0,.04); }
+.uc-stars { color:#f5b301; font-size:14px; letter-spacing:2px; margin-bottom:10px; }
+.uc-quote p { font-size:15px; color:#334155; line-height:1.6; margin:0 0 16px; }
+.uc-who { display:flex; align-items:center; gap:10px; }
+.uc-avatar { width:36px; height:36px; border-radius:50%; background:#0e57e8; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex:0 0 auto; }
+.uc-who .nm { font-size:14px; font-weight:700; color:#161922; }
+.uc-who .rl { font-size:12px; color:#94a3b8; }
+
+.uc-faq { max-width:860px; margin:0 auto; }
+.uc-faq details { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:0 20px; margin-bottom:12px; }
+.uc-faq summary { cursor:pointer; list-style:none; padding:18px 0; font-size:16px; font-weight:700; color:#161922; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+.uc-faq summary::-webkit-details-marker { display:none; }
+.uc-faq summary::after { content:"+"; color:#0e57e8; font-size:22px; font-weight:700; line-height:1; }
+.uc-faq details[open] summary::after { content:"\2212"; }
+.uc-faq details p { margin:0 0 18px; font-size:14.5px; color:#64748b; line-height:1.6; }
+
+.uc-bottom { background: linear-gradient(135deg,#0e57e8 0%,#0a3fb0 100%); color:#fff; text-align:center; padding:70px 24px; }
+.uc-bottom h2 { color:#fff; font-size:38px; margin:0 0 14px; }
+.uc-bottom p { color:#dbe6ff; font-size:17px; max-width:640px; margin:0 auto 28px; }
+
+@media (max-width:960px){
+  .uc-hero h2 { font-size:30px; }
+  .uc-h { font-size:26px; }
+  .uc-stats { grid-template-columns:repeat(2,1fr); }
+  .uc-compare, .uc-grid-3, .uc-quotes { grid-template-columns:1fr; }
+  .uc-calc-out { grid-template-columns:1fr; }
+  .uc-perks { flex-direction:column; align-items:flex-start; }
+  .uc-hero { padding-top:56px; }
+}
+</style>
+
 </head>
 <body>
 
@@ -480,39 +574,157 @@ body.cn-open { overflow: hidden; }
     </div>
   </section>
 
-<div class="cases-container">
-
-
   <!-- 2. Marketers -->
-  <section id="marketers" class="case-block reversed">
-    <div class="case-text">
-      <span class="c-badge">Agencies &amp; Media Buyers</span>
-      <h2 class="c-title">Marketers &amp; Growth Agencies</h2>
-      <p class="c-desc">Managing multiple client portfolios shouldn't mean drowning in spreadsheets and manual A/B split setups. Codellio empowers digital marketing teams to scale 50+ ad accounts with unified campaign templates and automatic fatigue mitigation.</p>
-      <ul class="c-checklist">
-        <li><span class="c-check-icon">✓</span> <span><strong>Cross-Account Intelligence:</strong> Learn which angles and hooks work best in each vertical and port them instantly.</span></li>
-        <li><span class="c-check-icon">✓</span> <span><strong>White-Label Client Dashboards:</strong> Automated weekly reports showing transparent ROAS and autonomous optimization savings.</span></li>
-        <li><span class="c-check-icon">✓</span> <span><strong>10x Production Speed:</strong> Generate hundreds of ad copy and visual variations in minutes, not weeks.</span></li>
-      </ul>
-      <a href="pricing.html" class="btn-primary">View Agency Plans</a>
+  <section id="marketers" class="uc-marketers">
+    <div class="uc-hero">
+      <span class="uc-badge">Built for Marketers &amp; Growth Agencies</span>
+      <h2>Are you a marketer struggling to scale campaigns across multiple clients?</h2>
+      <p class="uc-sub">Run all your clients' ads from one dashboard, launch campaigns in minutes, and save 12 hours every week with AI copy, templates, and budget intelligence.</p>
+      <p class="uc-meta">No credit card · Setup in few minutes · Keep your drafts</p>
+      <div class="uc-cta">
+        <a href="pricing.html" class="btn-primary">Start Free Trial</a>
+        <a href="contact.html" class="btn-secondary uc-btn-light">Book a Demo</a>
+      </div>
+      <div class="uc-stats">
+        <div class="uc-stat"><div class="num">18 hrs</div><div class="label">Weekly Time Saved</div></div>
+        <div class="uc-stat"><div class="num">4.8x</div><div class="label">Campaign Efficiency</div></div>
+        <div class="uc-stat"><div class="num">10x</div><div class="label">More Clients Handled</div></div>
+        <div class="uc-stat"><div class="num">₹14,400</div><div class="label">Monthly Savings</div></div>
+      </div>
     </div>
-    <div class="c-card-preview">
-      <div class="c-metric-row">
-        <div class="c-metric-card">
-          <div class="num">18 hrs</div>
-          <div class="label">Saved Weekly / Buyer</div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">The Marketer Struggle</span>
+        <h3 class="uc-h">Managing Multiple Accounts Shouldn't Mean Burning Out</h3>
+        <p class="uc-lead">Sound familiar? You're not alone. These are the top challenges agency owners and freelancers face every month.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-compare">
+          <div class="uc-cmp bad">
+            <h4>The Traditional Struggle</h4>
+            <ul>
+              <li>Switching between Google, Meta, and dashboards</li>
+              <li>Spending hours on ad copy &amp; creatives</li>
+              <li>Struggling to prove ROI &rarr; churn risk</li>
+            </ul>
+          </div>
+          <div class="uc-cmp good">
+            <h4>The digiAd AI Advantage</h4>
+            <ul>
+              <li>One dashboard for all campaigns — zero chaos</li>
+              <li>AI copy &amp; templates — launch in minutes</li>
+              <li>Smart budget insights — cut wasted spend, hit ROAS goals</li>
+            </ul>
+          </div>
         </div>
-        <div class="c-metric-card">
-          <div class="num">4.8x</div>
-          <div class="label">Avg Client ROAS</div>
+        <div class="uc-center" style="margin-top:28px;">
+          <a href="pricing.html" class="btn-primary">Start Reducing Your Busywork</a>
         </div>
       </div>
-      <div class="testimonial-quote">
-        "Our agency doubled our client roster without hiring new media buyers. Codellio handles the mundane creative rendering and bidding shifts while we focus on high-level brand strategy."
-        <div class="testimonial-author">&mdash; Marcus Vance, Co-Founder at Apex Media Partners</div>
+    </div>
+
+    <div class="uc-sec alt">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Solutions Built For You</span>
+        <h3 class="uc-h">Built for Marketers, Freelancers &amp; Growth Agencies</h3>
+        <p class="uc-lead">Everything you need to compete with big agencies — without the headcount.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-grid-3">
+          <div class="uc-feat"><span class="uc-tag">AI-Powered</span><h4>Look Like a Full Agency Team</h4><p class="uc-fsub">Handle more clients without hiring</p><p>Run every client's campaigns from one workspace and deliver agency-grade work solo.</p></div>
+          <div class="uc-feat"><span class="uc-tag">AI Avatars</span><h4>Video Ads Without a Crew</h4><p class="uc-fsub">Offer pro video ads solo</p><p>Generate presenter-led video ads and variations in minutes — no studio or actors needed.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Smart Targeting</span><h4>Cross-Account Intelligence</h4><p class="uc-fsub">Smarter targeting, bigger ROI</p><p>Learn which angles and hooks win across accounts and apply them instantly.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Direct Connect</span><h4>Direct WhatsApp &amp; SMS Workflows</h4><p class="uc-fsub">Right person, right time</p><p>Trigger WhatsApp/SMS follow-ups and conversions straight from your ad campaigns.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Omnichannel</span><h4>Omnichannel Ad Distribution</h4><p class="uc-fsub">Post once, appear everywhere</p><p>Publish to Google, Meta and more from a single workflow and expand reach fast.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Reporting</span><h4>White-Label Client Dashboard</h4><p class="uc-fsub">See everything, act instantly</p><p>Automated weekly reports that impress clients and keep them renewing.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Agency Accelerator</span>
+        <h3 class="uc-h">How Much Time &amp; Money Can digiAd AI Save You?</h3>
+        <p class="uc-lead">Calculate your potential weekly time savings.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-calc">
+          <label for="ucClients">Clients you manage: <span id="ucClientsVal">7</span></label>
+          <input id="ucClients" type="range" min="1" max="15" value="7" />
+          <div class="uc-calc-out">
+            <div class="uc-calc-card"><div class="num" id="ucHours">18 hrs/week</div><div class="label">Time saved</div></div>
+            <div class="uc-calc-card"><div class="num" id="ucMoney">₹14,400/month</div><div class="label">Value saved</div></div>
+          </div>
+          <p class="uc-calc-note">Estimated at ₹200/hr, across campaign setup, creative production and reporting.</p>
+          <div class="uc-center"><a href="pricing.html" class="btn-primary">Start Free Trial</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec" style="padding-top:0;">
+      <div class="uc-wrap">
+        <div class="uc-perks">
+          <div>
+            <h3>Beta Perks Ending Soon — 300 Extra Credits + Concierge Onboarding</h3>
+            <p>Sign up this week to get 300 extra credits + concierge onboarding. Only limited free slots left.</p>
+          </div>
+          <div class="uc-count">
+            <div class="cell"><div class="n" id="ucD">06</div><div class="l">Days</div></div>
+            <div class="cell"><div class="n" id="ucH">23</div><div class="l">Hours</div></div>
+            <div class="cell"><div class="n" id="ucM">27</div><div class="l">Minutes</div></div>
+            <div class="cell"><div class="n" id="ucS">32</div><div class="l">Seconds</div></div>
+          </div>
+          <a href="pricing.html" class="btn-secondary" style="background:rgba(255,255,255,.12); color:#fff;">Claim Your Credits</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec alt">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Success Stories</span>
+        <h3 class="uc-h">Trusted by Solo Freelancers &amp; Rapid-Growth Agencies</h3>
+        <p class="uc-lead">Join 130+ freelancers and agencies scaling with digiAd AI.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-quotes">
+          <div class="uc-quote"><div class="uc-stars">★★★★★</div><p>"Saved me 15+ hrs weekly. I finally run every client from one place."</p><div class="uc-who"><div class="uc-avatar">R</div><div><div class="nm">Riya</div><div class="rl">Freelance Marketer</div></div></div></div>
+          <div class="uc-quote"><div class="uc-stars">★★★★★</div><p>"Scaled 6 accounts in 1 week without adding any headcount."</p><div class="uc-who"><div class="uc-avatar">A</div><div><div class="nm">Arjun</div><div class="rl">Agency Owner</div></div></div></div>
+          <div class="uc-quote"><div class="uc-stars">★★★★★</div><p>"Clients finally renew with confidence — the reports do the talking."</p><div class="uc-who"><div class="uc-avatar">M</div><div><div class="nm">Mehak</div><div class="rl">Growth Consultant</div></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Answers &amp; Assurance</span>
+        <h3 class="uc-h">Frequently Asked Questions</h3>
+        <p class="uc-lead">Everything you need to know before getting started.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-faq">
+          <details><summary>Do I need ad experience?</summary><p>No, digiAd AI guides you step by step. Our templates and AI copy mean you can launch professional campaigns even if you're new to advertising.</p></details>
+          <details><summary>What's the minimum budget?</summary><p>Start with ₹399 / $9. Smart allocation ensures efficiency. Our budget intelligence helps you maximize every rupee across platforms.</p></details>
+          <details><summary>How fast can I launch?</summary><p>Under 10 minutes, from signup to live ads. Connect your accounts, pick a template, and you're ready to launch campaigns across Google and Meta.</p></details>
+          <details><summary>Can I cancel anytime?</summary><p>Yes, no contracts or hidden fees. Cancel with one click. You keep all your campaign data and templates even after cancelling.</p></details>
+          <details><summary>Which platforms are supported?</summary><p>Google &amp; Meta today, TikTok soon. We're constantly adding new platforms based on user feedback and market demand.</p></details>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-bottom">
+      <h2>Spend Less Time Juggling Accounts — Spend More Time Growing Them</h2>
+      <p>Join the freelancers who've already scaled their business with digiAd AI.</p>
+      <div class="uc-cta" style="margin-bottom:0;">
+        <a href="pricing.html" class="btn-primary" style="background:#fff; color:#0e57e8;">Start Free Trial</a>
+        <a href="contact.html" class="btn-secondary uc-btn-light">Book a Demo</a>
       </div>
     </div>
   </section>
+
+<div class="cases-container">
+
+
 
   <!-- 3. For D2C -->
   <section id="d2c" class="case-block">
@@ -677,6 +889,13 @@ body.cn-open { overflow: hidden; }
     if(t.closest('#cn-menu .cn-close')){close(e);return;}
     if(t.id==='cn-backdrop'){close(e);return;}
   });
+})();
+</script>
+<script>
+(function(){
+  var r=document.getElementById('ucClients');
+  if(r){var upd=function(){var c=+r.value;var hrs=Math.round(c*18/7);document.getElementById('ucClientsVal').textContent=c;document.getElementById('ucHours').textContent=hrs+' hrs/week';document.getElementById('ucMoney').textContent='\u20b9'+(hrs*800).toLocaleString('en-IN')+'/month';};r.addEventListener('input',upd);upd();}
+  if(document.getElementById('ucD')){var t=6*86400+23*3600+27*60+32;var pad=function(n){return String(n).padStart(2,'0');};setInterval(function(){t--;if(t<0)t=0;document.getElementById('ucD').textContent=pad(Math.floor(t/86400));document.getElementById('ucH').textContent=pad(Math.floor(t%86400/3600));document.getElementById('ucM').textContent=pad(Math.floor(t%3600/60));document.getElementById('ucS').textContent=pad(t%60);},1000);}
 })();
 </script>
 </body>
