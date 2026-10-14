@@ -321,6 +321,44 @@ body.cn-open { overflow: hidden; }
 }
 </style>
 
+<style id="uc-extra-style">
+/* ===== Use Cases: D2C / Real Estate extras ===== */
+.uc-props { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.uc-prop { background:#fff; border:1px solid #e2e8f0; border-radius:16px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,.04); }
+.uc-prop .thumb { height:132px; background:linear-gradient(135deg,#0e57e8,#0a3fb0); position:relative; }
+.uc-prop .thumb .live { position:absolute; top:12px; left:12px; background:#fff; color:#0e57e8; font-size:10px; font-weight:800; padding:4px 10px; border-radius:50px; text-transform:uppercase; letter-spacing:.6px; }
+.uc-prop .thumb svg { position:absolute; right:16px; bottom:12px; opacity:.45; }
+.uc-prop .body { padding:20px; }
+.uc-prop h4 { font-size:17px; color:#161922; margin:0 0 4px; }
+.uc-prop .loc { font-size:13px; color:#64748b; margin:0 0 12px; }
+.uc-prop .specs { font-size:13px; color:#475569; margin:0 0 16px; }
+.uc-prop .metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; border-top:1px solid #f1f5f9; padding-top:14px; }
+.uc-prop .metrics .m { text-align:center; }
+.uc-prop .metrics .m .v { font-size:15px; font-weight:800; color:#0e57e8; }
+.uc-prop .metrics .m .k { font-size:10px; color:#94a3b8; text-transform:uppercase; letter-spacing:.3px; }
+
+.uc-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.uc-step { background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:28px; box-shadow:0 10px 26px rgba(0,0,0,.04); }
+.uc-step .n { width:44px; height:44px; border-radius:50%; background:#eef4fe; color:#0e57e8; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+.uc-step h4 { font-size:18px; color:#161922; margin:0 0 8px; }
+.uc-step p { font-size:14px; color:#64748b; line-height:1.6; margin:0; }
+
+.uc-showcase { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center; }
+.uc-showcard { background:#fff; border:1px solid #e2e8f0; border-radius:18px; overflow:hidden; box-shadow:0 14px 40px rgba(0,0,0,.06); }
+.uc-showcard .thumb { height:190px; background:linear-gradient(135deg,#0e57e8,#0a3fb0); position:relative; }
+.uc-showcard .thumb svg { position:absolute; right:18px; bottom:14px; opacity:.4; }
+.uc-showcard .thumb .price { position:absolute; bottom:14px; left:14px; background:#fff; color:#161922; font-weight:800; font-size:16px; padding:6px 14px; border-radius:10px; }
+.uc-showcard .body { padding:22px; }
+.uc-showcard h4 { font-size:19px; color:#161922; margin:0 0 10px; }
+.uc-showcard p { font-size:14.5px; color:#64748b; line-height:1.6; margin:0 0 14px; }
+.uc-showcard .meta { font-size:13px; color:#475569; }
+.uc-showcopy .uc-h { font-size:28px; }
+
+@media (max-width:960px){
+  .uc-props, .uc-steps { grid-template-columns:1fr; }
+  .uc-showcase { grid-template-columns:1fr; }
+}
+</style>
 </head>
 <body>
 
@@ -713,73 +751,321 @@ body.cn-open { overflow: hidden; }
     </div>
   </section>
 
-<div class="cases-container">
-
-
-
   <!-- 3. For D2C -->
-  <section id="d2c" class="case-block">
-    <div class="case-text">
-      <span class="c-badge">E-Commerce &amp; Brands</span>
-      <h2 class="c-title">For D2C Brands</h2>
-      <p class="c-desc">Rising CPMs on Meta and TikTok can crush direct-to-consumer profit margins. Codellio equips D2C merchants with automated product catalog ad generation, high-retention UGC hooks, and flash promotion pacing that maximizes average order value.</p>
-      <ul class="c-checklist">
-        <li><span class="c-check-icon">✓</span> <span><strong>Shopify &amp; Product Feed Integration:</strong> Pull inventory feeds and instantly turn bestselling SKUs into dynamic high-converting ads.</span></li>
-        <li><span class="c-check-icon">✓</span> <span><strong>Creative Fatigue Shield:</strong> System alerts and automatically replaces ads before your return on ad spend drops.</span></li>
-        <li><span class="c-check-icon">✓</span> <span><strong>Cart Abandonment &amp; Cross-Sell:</strong> Hyper-relevant social remarketing ads showing the exact product viewed with customer reviews.</span></li>
-      </ul>
-      <a href="pricing.html" class="btn-primary">Boost D2C Sales</a>
+  <section id="d2c" class="uc-marketers">
+    <div class="uc-hero">
+      <span class="uc-badge">E-Commerce &amp; Brands</span>
+      <h2>Are you a D2C founder battling big brands with a limited budget?</h2>
+      <p class="uc-sub">Launch pro-level ads in minutes without hiring expensive agencies or wasting lakhs on experiments. Turn your small budget into big-brand campaigns — fast, simple, and cost-effective.</p>
+      <p class="uc-meta">Free trial for early users &middot; No credit card &middot; Launch in minutes</p>
+      <div class="uc-cta">
+        <a href="pricing.html" class="btn-primary">Start Free Trial</a>
+        <a href="contact.html" class="btn-secondary uc-btn-light">Book a Demo</a>
+      </div>
+      <div class="uc-stats">
+        <div class="uc-stat"><div class="num">10 min</div><div class="label">To Launch Ads</div></div>
+        <div class="uc-stat"><div class="num">3.2x</div><div class="label">ROAS In First Week</div></div>
+        <div class="uc-stat"><div class="num">120+</div><div class="label">Founders Onboard</div></div>
+        <div class="uc-stat"><div class="num">&#8377;399</div><div class="label">Starting Price</div></div>
+      </div>
     </div>
-    <div class="c-card-preview">
-      <div class="c-metric-row">
-        <div class="c-metric-card">
-          <div class="num">5.4x</div>
-          <div class="label">Blended ROAS</div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">The D2C Struggle</span>
+        <h3 class="uc-h">Feeling Stuck While Big Brands Dominate?</h3>
+        <p class="uc-lead">Your competitors have massive budgets and teams. Here is what is slowing you down — and how digiAd AI makes it simple.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-compare">
+          <div class="uc-cmp bad">
+            <h4>The Traditional Struggle</h4>
+            <ul>
+              <li>Massive budgets and teams — you fight an uphill battle with limited resources</li>
+              <li>Every campaign feels like another bill while your margins shrink</li>
+              <li>Hours wasted on dashboards instead of growing your business</li>
+            </ul>
+          </div>
+          <div class="uc-cmp good">
+            <h4>The digiAd AI Advantage</h4>
+            <ul>
+              <li>Never stare at a blank screen — AI writes converting copy in seconds</li>
+              <li>Scroll-stopping designs instantly — no designer needed, agency-quality results</li>
+              <li>Proven playbooks that boost ROI from top D2C brands</li>
+            </ul>
+          </div>
         </div>
-        <div class="c-metric-card">
-          <div class="num">+68%</div>
-          <div class="label">Repeat Purchases</div>
+        <div class="uc-center" style="margin-top:28px;">
+          <a href="pricing.html" class="btn-primary">Start Competing With Big Brands</a>
         </div>
       </div>
-      <div class="testimonial-quote">
-        "During our Black Friday launch, Codellio generated 80 dynamic creative variations in one morning and automatically shifted spend into our top 3 converting bundles. Unbeatable."
-        <div class="testimonial-author">&mdash; Sarah Chen, Founder of Lumina Skincare</div>
+    </div>
+
+    <div class="uc-sec alt">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Features That Deliver Real Results</span>
+        <h3 class="uc-h">Everything You Need to Compete — Without the Big Budget</h3>
+        <p class="uc-lead">Big-brand firepower at a small-brand cost.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-grid-3">
+          <div class="uc-feat"><span class="uc-tag">Predictive</span><h4>Predict Winning Ads</h4><p class="uc-fsub">Know what works before you spend</p><p>AI forecasts campaign performance with predictive scoring and identifies the best copy + creative combinations instantly.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Creative</span><h4>ROI-Driven Ad Copy &amp; Creatives</h4><p class="uc-fsub">Scroll-stopping ads in seconds</p><p>Generate psychology-backed copy and auto-design stunning creatives &amp; videos, personalised for audience segments.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Omnichannel</span><h4>1-Click Omnichannel Setup</h4><p class="uc-fsub">Launch everywhere in minutes</p><p>Pre-built templates for Google, Meta &amp; TikTok. Run ads across multiple platforms with one click.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Playbooks</span><h4>Optimization Playbooks</h4><p class="uc-fsub">Scale smarter, not costlier</p><p>Proven strategies from top D2C brands with real-time suggestions on what to pause, tweak, or scale.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Dashboard</span><h4>Founders' Growth Dashboard</h4><p class="uc-fsub">Every rupee tracked</p><p>A unified view across campaigns. Track performance in real time and spot winning ads instantly.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Budget</span><h4>Budget Recommendations</h4><p class="uc-fsub">Smarter ROI without overspending</p><p>Smart budget allocation across platforms to maximise efficiency with AI-driven spending suggestions.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">What Founders Are Saying</span>
+        <h3 class="uc-h">Join 120+ D2C Founders Who Transformed Their Ads</h3>
+        <p class="uc-lead">Real results from founders running on digiAd AI.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-quotes">
+          <div class="uc-quote"><div class="uc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;10 min to launch, like a full team on my laptop.&rdquo;</p><div class="uc-who"><div class="uc-avatar">R</div><div><div class="nm">Rahul</div><div class="rl">D2C Founder</div></div></div></div>
+          <div class="uc-quote"><div class="uc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;My ROAS grew 3.2x in the first week.&rdquo;</p><div class="uc-who"><div class="uc-avatar">S</div><div><div class="nm">Sneha</div><div class="rl">E-commerce Owner</div></div></div></div>
+          <div class="uc-quote"><div class="uc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Omnichannel ads in minutes, not days.&rdquo;</p><div class="uc-who"><div class="uc-avatar">K</div><div><div class="nm">Karan</div><div class="rl">D2C Entrepreneur</div></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec alt">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Answers &amp; Assurance</span>
+        <h3 class="uc-h">Frequently Asked Questions</h3>
+        <p class="uc-lead">Everything you need to know about getting started.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-faq">
+          <details><summary>Do I need ad experience?</summary><p>No — you are guided step by step. Our AI walks you through every decision with clear recommendations, so you can launch professional campaigns even if you are new to advertising.</p></details>
+          <details><summary>What's the minimum budget?</summary><p>Start with &#8377;399 / $9. Our smart budget allocation ensures maximum efficiency from day one.</p></details>
+          <details><summary>Can I cancel anytime?</summary><p>Yes, absolutely. No contracts, no hidden fees. Cancel with one click if you are not satisfied.</p></details>
+          <details><summary>How fast can I launch?</summary><p>Under a few minutes — from signup to live ads across all platforms in less time than a coffee break.</p></details>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-bottom">
+      <h2>Turn Your Small Budget Into Big-Brand Campaigns</h2>
+      <p>Join the founders who have already scaled their ads with digiAd AI.</p>
+      <div class="uc-cta" style="margin-bottom:0;">
+        <a href="pricing.html" class="btn-primary" style="background:#fff; color:#0e57e8;">Start Free Trial</a>
+        <a href="contact.html" class="btn-secondary uc-btn-light">Book a Demo</a>
       </div>
     </div>
   </section>
 
   <!-- 4. Real Estate -->
-  <section id="real-estate" class="case-block reversed">
-    <div class="case-text">
-      <span class="c-badge">Realtors &amp; Developers</span>
-      <h2 class="c-title">Real Estate Lead Generation</h2>
-      <p class="c-desc">Real estate leads must be verified, geographically precise, and pre-screened for purchasing intent. Codellio creates targeted property showcase campaigns with instant lead forms that pipe directly into your CRM or agent inbox.</p>
-      <ul class="c-checklist">
-        <li><span class="c-check-icon">✓</span> <span><strong>Hyper-Local Radius Geofencing:</strong> Target buyers within specific zip codes, income brackets, and commuter corridors.</span></li>
-        <li><span class="c-check-icon">✓</span> <span><strong>Virtual Tour &amp; Open House Funnels:</strong> Collect attendee RSVPs and automated SMS reminders for weekend walkthroughs.</span></li>
-        <li><span class="c-check-icon">✓</span> <span><strong>Pre-Qualified Homebuyer Questionnaires:</strong> Screen by financing status, move-in horizon, and budget parameters.</span></li>
-      </ul>
-      <a href="contact.html" class="btn-primary">Generate Property Leads</a>
+  <section id="real-estate" class="uc-marketers">
+    <div class="uc-hero">
+      <span class="uc-badge">Realtors &amp; Developers</span>
+      <h2>Are you a Real estate agent struggling to get buyer calls from your ads?</h2>
+      <p class="uc-sub">Run all your property ads from one simple dashboard. Launch in minutes and start getting real buyer calls today — no marketing skills needed.</p>
+      <p class="uc-meta">&#10003; Start Free Trial &middot; No Credit Card Required</p>
+      <div class="uc-cta">
+        <a href="pricing.html" class="btn-primary">Start Free Trial</a>
+        <a href="contact.html" class="btn-secondary uc-btn-light">Book a Demo</a>
+      </div>
+      <div class="uc-stats">
+        <div class="uc-stat"><div class="num">31</div><div class="label">Buyer Calls (Top Ad)</div></div>
+        <div class="uc-stat"><div class="num">6.8K</div><div class="label">Ad Views (Top Ad)</div></div>
+        <div class="uc-stat"><div class="num">3</div><div class="label">Steps To Go Live</div></div>
+        <div class="uc-stat"><div class="num">10+</div><div class="label">Projects Per Login</div></div>
+      </div>
     </div>
-    <div class="c-card-preview">
-      <div class="c-metric-row">
-        <div class="c-metric-card">
-          <div class="num">$14.20</div>
-          <div class="label">Cost Per Buyer Lead</div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">The Agent's Hustle</span>
+        <h3 class="uc-h">Stop Guessing. Start Selling.</h3>
+        <p class="uc-lead">The property hustle is real. Here is what is slowing you down — and how digiAd AI makes it simple.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-compare">
+          <div class="uc-cmp bad">
+            <h4>The Pains Agents Face</h4>
+            <ul>
+              <li>Spending hours boosting posts with no calls to show</li>
+              <li>Struggling to write ad copy, select photos, and target buyers</li>
+              <li>Wasting money on ads but failing to prove ROI</li>
+            </ul>
+          </div>
+          <div class="uc-cmp good">
+            <h4>How digiAd AI Helps You</h4>
+            <ul>
+              <li>One dashboard for all ads — no juggling multiple platforms</li>
+              <li>Ready-made ad copy &amp; templates — polished ads in minutes</li>
+              <li>Smart budget control — stretch spend, get more genuine calls</li>
+            </ul>
+          </div>
         </div>
-        <div class="c-metric-card">
-          <div class="num">3.4x</div>
-          <div class="label">Walkthrough Bookings</div>
+        <div class="uc-center" style="margin-top:28px;">
+          <a href="pricing.html" class="btn-primary">Start Getting Buyer Calls</a>
         </div>
       </div>
-      <div class="testimonial-quote">
-        "We sold out all 32 units in our new luxury condominium development 2 months ahead of schedule. The hyper-local geofenced ads generated serious, pre-qualified buyers every single week."
-        <div class="testimonial-author">&mdash; David Sterling, Managing Director at Sterling Heights Properties</div>
+    </div>
+
+    <div class="uc-sec alt">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Live Property Ads</span>
+        <h3 class="uc-h">See Your Properties Come to Life</h3>
+        <p class="uc-lead">Professional ads that convert browsers into buyers. Each property gets custom targeting and compelling copy.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-props">
+          <div class="uc-prop">
+            <div class="thumb"><span class="live">Live Ad</span><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></div>
+            <div class="body">
+              <h4>2BHK Modern Apartment</h4>
+              <p class="loc">Bandra West, Mumbai</p>
+              <p class="specs">2 Beds &middot; 2 Baths &middot; 850 sq ft</p>
+              <div class="metrics">
+                <div class="m"><div class="v">15</div><div class="k">Buyer Calls</div></div>
+                <div class="m"><div class="v">2.3K</div><div class="k">Ad Views</div></div>
+                <div class="m"><div class="v">&#8377;3,200</div><div class="k">Spend</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="uc-prop">
+            <div class="thumb"><span class="live">Live Ad</span><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></div>
+            <div class="body">
+              <h4>3BHK Luxury Villa</h4>
+              <p class="loc">Koregaon Park, Pune</p>
+              <p class="specs">3 Beds &middot; 3 Baths &middot; 1,200 sq ft</p>
+              <div class="metrics">
+                <div class="m"><div class="v">22</div><div class="k">Buyer Calls</div></div>
+                <div class="m"><div class="v">4.1K</div><div class="k">Ad Views</div></div>
+                <div class="m"><div class="v">&#8377;4,500</div><div class="k">Spend</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="uc-prop">
+            <div class="thumb"><span class="live">Live Ad</span><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></div>
+            <div class="body">
+              <h4>4BHK Penthouse</h4>
+              <p class="loc">Golf Course Road, Gurgaon</p>
+              <p class="specs">4 Beds &middot; 4 Baths &middot; 2,100 sq ft</p>
+              <div class="metrics">
+                <div class="m"><div class="v">31</div><div class="k">Buyer Calls</div></div>
+                <div class="m"><div class="v">6.8K</div><div class="k">Ad Views</div></div>
+                <div class="m"><div class="v">&#8377;6,000</div><div class="k">Spend</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Created Automatically</span>
+        <h3 class="uc-h">Professional Ads, Generated For You</h3>
+        <p class="uc-lead">See how digiAd AI transforms your property details into a compelling advertisement.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-showcase">
+          <div class="uc-showcard">
+            <div class="thumb"><span class="price">&#8377;1.2 Cr</span><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></div>
+            <div class="body">
+              <h4>Dream 2BHK in Bandra West — Ready to Move!</h4>
+              <p>Modern amenities, prime location, great connectivity. Perfect for families looking for luxury living in Mumbai's heart.</p>
+              <p class="meta">Bandra West, Mumbai &middot; 2 Beds &middot; 2 Baths &middot; 850 sq ft</p>
+            </div>
+          </div>
+          <div class="uc-showcopy">
+            <span class="uc-eyebrow">AI-Generated Ad Copy</span>
+            <h3 class="uc-h">From Property Details to Live Ad — In Minutes</h3>
+            <p class="uc-lead" style="margin-bottom:18px;">Upload your property once and digiAd AI writes the headline, description, targeting, and creative for you.</p>
+            <div class="uc-feat" style="box-shadow:none;">
+              <h4>2BHK Apartment in Bandra West | Ready to Move | &#8377;1.2 Cr</h4>
+              <p>Premium 2BHK with modern amenities in Bandra West. Great connectivity, family-friendly neighbourhood. Schedule a site visit today.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec alt">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Built For Speed</span>
+        <h3 class="uc-h">Everything You Need to Sell Faster</h3>
+        <p class="uc-lead">Professional tools that save time and grow your buyer calls.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-grid-3">
+          <div class="uc-feat"><span class="uc-tag">Fast</span><h4>Property-to-Ad in Minutes</h4><p>Upload details once and get ready ads instantly.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Omnichannel</span><h4>Google + Meta Together</h4><p>Ads on Facebook, Instagram &amp; Google in one click.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Leads</span><h4>Call &amp; WhatsApp Leads</h4><p>Buyer calls and messages come straight to your phone.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Budget</span><h4>Smart Budget Pacing</h4><p>Avoid wasted spend and move money to the ads that work.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Tracking</span><h4>Real-Time Results</h4><p>Track calls, enquiries &amp; site-visit requests instantly.</p></div>
+          <div class="uc-feat"><span class="uc-tag">Agency</span><h4>Agency Mode (Multi-Project)</h4><p>Run ads for 10+ projects or clients from one login.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">How It Works</span>
+        <h3 class="uc-h">From Listing to Buyer Calls in 3 Simple Steps</h3>
+        <p class="uc-lead">No marketing skills needed — just your listings.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-steps">
+          <div class="uc-step"><div class="n">1</div><h4>Upload Property</h4><p>Add photos, price, and highlights.</p></div>
+          <div class="uc-step"><div class="n">2</div><h4>Click &ldquo;Create Ads&rdquo;</h4><p>digiAd AI writes copy, designs creatives &amp; sets targeting.</p></div>
+          <div class="uc-step"><div class="n">3</div><h4>Go Live</h4><p>Start receiving buyer calls and site-visit requests.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec alt">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Loved By Real Estate Pros</span>
+        <h3 class="uc-h">Trusted by Agencies &amp; Builders Across India</h3>
+        <p class="uc-lead">Agents and builders getting real buyer calls with digiAd AI.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-quotes">
+          <div class="uc-quote"><div class="uc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Earlier I wasted money on random boosts. With digiAd AI, I get actual buyer calls — closed 2 flats last month.&rdquo;</p><div class="uc-who"><div class="uc-avatar">R</div><div><div class="nm">Riya</div><div class="rl">Independent Agent, Indore</div></div></div></div>
+          <div class="uc-quote"><div class="uc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;We listed 6 flats and saw 3x more site visits in one week. All from one dashboard.&rdquo;</p><div class="uc-who"><div class="uc-avatar">A</div><div><div class="nm">Arjun</div><div class="rl">Agency Owner, Pune</div></div></div></div>
+          <div class="uc-quote"><div class="uc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;No need to hire a marketer. Ads run in minutes, and my team just handles the calls.&rdquo;</p><div class="uc-who"><div class="uc-avatar">M</div><div><div class="nm">Meera</div><div class="rl">Builder Sales Lead, Jaipur</div></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-sec">
+      <div class="uc-wrap uc-center">
+        <span class="uc-eyebrow">Answers &amp; Assurance</span>
+        <h3 class="uc-h">Frequently Asked Questions</h3>
+        <p class="uc-lead">Everything you need to know before you start.</p>
+      </div>
+      <div class="uc-wrap">
+        <div class="uc-faq">
+          <details><summary>Do I need a credit card to start?</summary><p>No. Start free and launch your first ad in minutes.</p></details>
+          <details><summary>How long does setup take?</summary><p>Under 10 minutes — upload your property, click &ldquo;Create Ads&rdquo;, and go live.</p></details>
+          <details><summary>Which platforms are supported?</summary><p>Ads run on Facebook, Instagram &amp; Google from a single workflow.</p></details>
+          <details><summary>How do leads reach me?</summary><p>Buyer calls and WhatsApp messages come straight to your phone.</p></details>
+          <details><summary>Is digiAd AI built for agencies too?</summary><p>Yes. Agency mode lets you run ads for 10+ projects or clients from one login.</p></details>
+          <details><summary>What if I'm not tech-savvy?</summary><p>No marketing skills needed — digiAd AI handles copy, creatives and targeting for you.</p></details>
+        </div>
+      </div>
+    </div>
+
+    <div class="uc-bottom">
+      <h2>Turn Property Listings Into Buyer Calls</h2>
+      <p>Launch your first property ad in minutes — no marketing skills needed.</p>
+      <div class="uc-cta" style="margin-bottom:0;">
+        <a href="pricing.html" class="btn-primary" style="background:#fff; color:#0e57e8;">Start Free Trial</a>
+        <a href="contact.html" class="btn-secondary uc-btn-light">Book a Demo</a>
       </div>
     </div>
   </section>
 
-</div>
 
 <div class="bottom-cta">
   <h2>Experience Tailored Performance For Your Industry</h2>
